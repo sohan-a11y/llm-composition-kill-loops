@@ -1,10 +1,10 @@
 {
-  "experiment_name": "c029_cycle_9",
-  "updated_at": 1790107671.317826,
+  "experiment_name": "c029_cycle_13",
+  "updated_at": 1790107881.8994207,
   "trial_count": 2,
   "trials": [
     {
-      "trial_id": "c029_cycle_9_gen_1",
+      "trial_id": "c029_cycle_13_gen_1",
       "config": {
         "k": 2,
         "domain": 40,
@@ -16,20 +16,20 @@
         "ssa_mode": true
       },
       "metrics": {
-        "acc_mean": 0.28,
+        "acc_mean": 0.2725,
         "acc_std": 0.0,
-        "loss_mean": 1.5473994791507721,
+        "loss_mean": 1.5233923494815826,
         "loss_std": 0.0,
         "n_params_mean": 109567.0,
         "n_params_std": 0.0
       },
       "sanity_passed": true,
       "kill_control_passed": true,
-      "notes": "Low composition accuracy (0.2800). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790107647.576514
+      "notes": "Low composition accuracy (0.2725). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790107866.0709248
     },
     {
-      "trial_id": "c029_cycle_9_gen_2",
+      "trial_id": "c029_cycle_13_gen_2",
       "config": {
         "k": 2,
         "domain": 40,
@@ -41,17 +41,17 @@
         "ssa_mode": true
       },
       "metrics": {
-        "acc_mean": 0.28,
+        "acc_mean": 0.2725,
         "acc_std": 0.0,
-        "loss_mean": 1.5473994791507721,
+        "loss_mean": 1.5233923494815826,
         "loss_std": 0.0,
         "n_params_mean": 109567.0,
         "n_params_std": 0.0
       },
       "sanity_passed": true,
       "kill_control_passed": true,
-      "notes": "Low composition accuracy (0.2800). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790107671.3178217
+      "notes": "Low composition accuracy (0.2725). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790107881.899419
     }
   ]
 }

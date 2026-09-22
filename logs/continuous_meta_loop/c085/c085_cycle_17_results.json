@@ -1,0 +1,23 @@
+{
+  "experiment_name": "c085_cycle_17",
+  "updated_at": 1790108036.0243535,
+  "trial_count": 1,
+  "trials": [
+    {
+      "trial_id": "c085_cycle_17_gen_1",
+      "config": {
+        "n_samples": 150,
+        "n_layers": 40,
+        "d_model": 64,
+        "threshold": 0.49
+      },
+      "metrics": {
+        "error": -1.0
+      },
+      "sanity_passed": false,
+      "kill_control_passed": false,
+      "notes": "Sanity check failed: trivial harness check did not hit passing threshold.",
+      "timestamp": 1790108036.02435
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "experiment_name": "c124_cycle_1",
+  "updated_at": 1790108890.915465,
+  "trial_count": 4,
+  "trials": [
+    {
+      "trial_id": "c124_cycle_1_gen_1",
+      "config": {
+        "n_samples": 250,
+        "n_distractors": 8,
+        "n_classes": 5,
+        "km": 1.0,
+        "vmax": 1.0
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "n_sinks_mean": 8.0,
+        "n_sinks_std": 0.0,
+        "km_mean": 1.0,
+        "km_std": 0.0,
+        "vmax_mean": 1.0,
+        "vmax_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": false,
+      "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
+      "timestamp": 1790108886.1081707
+    },
+    {
+      "trial_id": "c124_cycle_1_gen_2",
+      "config": {
+        "n_samples": 250,
+        "n_distractors": 8,
+        "n_classes": 5,
+        "km": 1.0,
+        "vmax": 1.0
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "n_sinks_mean": 8.0,
+        "n_sinks_std": 0.0,
+        "km_mean": 1.0,
+        "km_std": 0.0,
+        "vmax_mean": 1.0,
+        "vmax_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": false,
+      "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
+      "timestamp": 1790108886.108174
+    },
+    {
+      "trial_id": "c124_cycle_1_gen_1",
+      "config": {
+        "n_samples": 250,
+        "n_distractors": 8,
+        "n_classes": 5,
+        "km": 1.0,
+        "vmax": 1.0
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "n_sinks_mean": 8.0,
+        "n_sinks_std": 0.0,
+        "km_mean": 1.0,
+        "km_std": 0.0,
+        "vmax_mean": 1.0,
+        "vmax_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790108888.4937165
+    },
+    {
+      "trial_id": "c124_cycle_1_gen_2",
+      "config": {
+        "n_samples": 250,
+        "n_distractors": 8,
+        "n_classes": 5,
+        "km": 1.0,
+        "vmax": 1.0
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "n_sinks_mean": 8.0,
+        "n_sinks_std": 0.0,
+        "km_mean": 1.0,
+        "km_std": 0.0,
+        "vmax_mean": 1.0,
+        "vmax_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790108890.915463
+    }
+  ]
+}

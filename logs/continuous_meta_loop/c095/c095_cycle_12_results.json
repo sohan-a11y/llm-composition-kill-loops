@@ -1,0 +1,51 @@
+{
+  "experiment_name": "c095_cycle_12",
+  "updated_at": 1790107799.346796,
+  "trial_count": 2,
+  "trials": [
+    {
+      "trial_id": "c095_cycle_12_gen_1",
+      "config": {
+        "n_samples": 120,
+        "n_layers": 8,
+        "threshold": 1.85
+      },
+      "metrics": {
+        "acc_mean": 0.41666666666666663,
+        "acc_std": 0.008333333333333331,
+        "tpr_mean": 0.0,
+        "tpr_std": 0.0,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "mean_tortuosity_mean": 1.3386401349986676,
+        "mean_tortuosity_std": 0.0032114894975062702
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.4167). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107799.1081507
+    },
+    {
+      "trial_id": "c095_cycle_12_gen_2",
+      "config": {
+        "n_samples": 120,
+        "n_layers": 8,
+        "threshold": 1.9000000000000001
+      },
+      "metrics": {
+        "acc_mean": 0.41666666666666663,
+        "acc_std": 0.008333333333333331,
+        "tpr_mean": 0.0,
+        "tpr_std": 0.0,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "mean_tortuosity_mean": 1.34343345235704,
+        "mean_tortuosity_std": 0.0020268757482967414
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.4167). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107799.3467925
+    }
+  ]
+}

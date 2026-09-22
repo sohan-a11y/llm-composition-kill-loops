@@ -19,6 +19,7 @@ from projects.c085_residual_curvature.eval_curvature import evaluate_curvature_a
 from projects.c063_virtual_syntax.eval_grammar_tax import evaluate_virtual_syntax, sanity_check_syntax, kill_control_syntax
 from projects.c094_residual_correlation.eval_correlation import evaluate_residual_correlation, sanity_check_correlation, kill_control_correlation
 from projects.c095_residual_arclength.eval_calibration import evaluate_arclength_calibration, sanity_check_arclength, kill_control_arclength
+from projects.c124_enzymatic_attention.eval_enzymatic import evaluate_enzymatic, sanity_check_enzymatic, kill_control_enzymatic
 
 
 def run_continuous_meta_loop(max_cycles: int = 10):
@@ -157,6 +158,30 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             cycle_results["c029"] = {"best_acc": res_c029["best_score"], "config": res_c029["best_config"]}
         except Exception as e:
             print(f"[ERROR in C029]: {e}")
+            traceback.print_exc()
+
+        # -------------------------------------------------------------
+        # 6. Project C124: Enzymatic Substrate Attention (Scaling sinks & Km)
+        # -------------------------------------------------------------
+        try:
+            sinks_count = 6 + (cycle * 2)
+            print(f"\n[Running C124] Attention Sinks: {sinks_count}, Km: 1.0")
+            loop_c124 = SelfImprovingLoop(
+                experiment_name=f"c124_cycle_{cycle}",
+                initial_config={"n_samples": 250, "n_distractors": sinks_count, "n_classes": 5, "km": 1.0, "vmax": 1.0},
+                train_and_eval_fn=evaluate_enzymatic,
+                sanity_check_fn=sanity_check_enzymatic,
+                kill_control_fn=kill_control_enzymatic,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "km": best_config["km"] + 0.2 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c124"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c124 = loop_c124.run_cycle()
+            cycle_results["c124"] = {"best_acc": res_c124["best_score"], "config": res_c124["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C124]: {e}")
             traceback.print_exc()
 
         cycle_elapsed = time.time() - cycle_start
