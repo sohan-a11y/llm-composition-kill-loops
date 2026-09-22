@@ -1,0 +1,53 @@
+{
+  "experiment_name": "c132_soliton_residual",
+  "updated_at": 1790109331.628734,
+  "trial_count": 2,
+  "trials": [
+    {
+      "trial_id": "c132_soliton_residual_gen_1",
+      "config": {
+        "n_samples": 250,
+        "n_layers": 16,
+        "d_model": 32,
+        "n_classes": 5,
+        "beta": 0.1,
+        "nu": 0.03,
+        "epochs": 25,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.9950000047683716,
+        "acc_std": 0.004999995231628418,
+        "loss_mean": 0.0,
+        "loss_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9950). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790109325.7464085
+    },
+    {
+      "trial_id": "c132_soliton_residual_gen_2",
+      "config": {
+        "n_samples": 250,
+        "n_layers": 16,
+        "d_model": 32,
+        "n_classes": 5,
+        "beta": 0.1,
+        "nu": 0.03,
+        "epochs": 25,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.9950000047683716,
+        "acc_std": 0.004999995231628418,
+        "loss_mean": 0.0,
+        "loss_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9950). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790109331.628718
+    }
+  ]
+}

@@ -20,6 +20,7 @@ from projects.c063_virtual_syntax.eval_grammar_tax import evaluate_virtual_synta
 from projects.c094_residual_correlation.eval_correlation import evaluate_residual_correlation, sanity_check_correlation, kill_control_correlation
 from projects.c095_residual_arclength.eval_calibration import evaluate_arclength_calibration, sanity_check_arclength, kill_control_arclength
 from projects.c124_enzymatic_attention.eval_enzymatic import evaluate_enzymatic, sanity_check_enzymatic, kill_control_enzymatic
+from projects.c132_soliton_residual.eval_soliton import evaluate_soliton, sanity_check_soliton, kill_control_soliton
 
 
 def run_continuous_meta_loop(max_cycles: int = 10):
@@ -182,6 +183,31 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             cycle_results["c124"] = {"best_acc": res_c124["best_score"], "config": res_c124["best_config"]}
         except Exception as e:
             print(f"[ERROR in C124]: {e}")
+            traceback.print_exc()
+
+        # -------------------------------------------------------------
+        # 7. Project C132: Soliton Residual Stream (Scaling depth & beta)
+        # -------------------------------------------------------------
+        try:
+            layers_count = 12 + (cycle * 2)
+            beta_val = 0.08 + (cycle * 0.01)
+            print(f"\n[Running C132] Layers: {layers_count} (unnormalized), beta: {beta_val:.2f}, nu: 0.03")
+            loop_c132 = SelfImprovingLoop(
+                experiment_name=f"c132_cycle_{cycle}",
+                initial_config={"n_samples": 250, "n_layers": layers_count, "d_model": 32, "n_classes": 5, "beta": beta_val, "nu": 0.03, "epochs": 20, "lr": 0.01},
+                train_and_eval_fn=evaluate_soliton,
+                sanity_check_fn=sanity_check_soliton,
+                kill_control_fn=kill_control_soliton,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "beta": best_config["beta"] + 0.02 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c132"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c132 = loop_c132.run_cycle()
+            cycle_results["c132"] = {"best_acc": res_c132["best_score"], "config": res_c132["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C132]: {e}")
             traceback.print_exc()
 
         cycle_elapsed = time.time() - cycle_start
