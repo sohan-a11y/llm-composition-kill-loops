@@ -1,0 +1,92 @@
+{
+  "experiment_name": "c085_residual_curvature_alarm",
+  "updated_at": 1790104474.3972266,
+  "trial_count": 4,
+  "trials": [
+    {
+      "trial_id": "c085_residual_curvature_alarm_gen_1",
+      "config": {
+        "n_samples": 200,
+        "n_layers": 8,
+        "d_model": 64,
+        "threshold": 0.4
+      },
+      "metrics": {
+        "error": -1.0
+      },
+      "sanity_passed": false,
+      "kill_control_passed": false,
+      "notes": "Sanity check failed: trivial harness check did not hit passing threshold.",
+      "timestamp": 1790104470.6289206
+    },
+    {
+      "trial_id": "c085_residual_curvature_alarm_gen_1",
+      "config": {
+        "n_samples": 200,
+        "n_layers": 8,
+        "d_model": 64,
+        "threshold": 0.18
+      },
+      "metrics": {
+        "acc_mean": 0.9975,
+        "acc_std": 0.0025000000000000022,
+        "tpr_mean": 0.995192307594188,
+        "tpr_std": 0.0048076923048018805,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "mean_curvature_mean": 0.33641014993190765,
+        "mean_curvature_std": 0.004331663250923157
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9975). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790104472.282266
+    },
+    {
+      "trial_id": "c085_residual_curvature_alarm_gen_2",
+      "config": {
+        "n_samples": 200,
+        "n_layers": 8,
+        "d_model": 64,
+        "threshold": 0.18
+      },
+      "metrics": {
+        "acc_mean": 0.9975,
+        "acc_std": 0.0025000000000000022,
+        "tpr_mean": 0.995192307594188,
+        "tpr_std": 0.0048076923048018805,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "mean_curvature_mean": 0.33641014993190765,
+        "mean_curvature_std": 0.004331663250923157
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9975). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790104473.455304
+    },
+    {
+      "trial_id": "c085_residual_curvature_alarm_gen_3",
+      "config": {
+        "n_samples": 200,
+        "n_layers": 8,
+        "d_model": 64,
+        "threshold": 0.22
+      },
+      "metrics": {
+        "acc_mean": 0.9975,
+        "acc_std": 0.0025000000000000022,
+        "tpr_mean": 0.995192307594188,
+        "tpr_std": 0.0048076923048018805,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "mean_curvature_mean": 0.33641014993190765,
+        "mean_curvature_std": 0.004331663250923157
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9975). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790104474.3972144
+    }
+  ]
+}

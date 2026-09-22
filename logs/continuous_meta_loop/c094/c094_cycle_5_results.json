@@ -1,0 +1,76 @@
+{
+  "experiment_name": "c094_cycle_5",
+  "updated_at": 1790107327.5847936,
+  "trial_count": 3,
+  "trials": [
+    {
+      "trial_id": "c094_cycle_5_gen_1",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 10,
+        "n_layers": 8,
+        "threshold": 0.5
+      },
+      "metrics": {
+        "acc_mean": 0.985,
+        "acc_std": 0.0050000000000000044,
+        "tpr_mean": 0.9672619045608347,
+        "tpr_std": 0.01488095240663978,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.901785714099171,
+        "early_lead_rate_std": 0.044642857160395455
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9850). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790107321.9203968
+    },
+    {
+      "trial_id": "c094_cycle_5_gen_1",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 10,
+        "n_layers": 8,
+        "threshold": 0.5
+      },
+      "metrics": {
+        "acc_mean": 0.985,
+        "acc_std": 0.0050000000000000044,
+        "tpr_mean": 0.9672619045608347,
+        "tpr_std": 0.01488095240663978,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.901785714099171,
+        "early_lead_rate_std": 0.044642857160395455
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9850). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790107325.1547806
+    },
+    {
+      "trial_id": "c094_cycle_5_gen_2",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 10,
+        "n_layers": 8,
+        "threshold": 0.55
+      },
+      "metrics": {
+        "acc_mean": 0.99,
+        "acc_std": 0.010000000000000009,
+        "tpr_mean": 0.9761904759878117,
+        "tpr_std": 0.023809523833616786,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.9136904760010984,
+        "early_lead_rate_std": 0.03273809525846799
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9900). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790107327.5847926
+    }
+  ]
+}

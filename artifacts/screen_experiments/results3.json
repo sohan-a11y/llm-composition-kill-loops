@@ -1,0 +1,42 @@
+[
+ {
+  "name": "bottleneck5_nosup",
+  "group": "architect",
+  "acc": 0.19775,
+  "params": 117829,
+  "survivor": false,
+  "sec": 47
+ },
+ {
+  "name": "bottleneck5_aux",
+  "group": "architect",
+  "acc": 0.20525,
+  "params": 118154,
+  "survivor": false,
+  "sec": 35
+ },
+ {
+  "name": "aux_TRUE_10pct",
+  "group": "dose",
+  "acc": 0.1935,
+  "params": 117509,
+  "survivor": false,
+  "sec": 33
+ },
+ {
+  "name": "aux_TRUE_15pct",
+  "group": "dose",
+  "acc": 0.1955,
+  "params": 117509,
+  "survivor": false,
+  "sec": 33
+ },
+ {
+  "name": "aux_TRUE_50pct",
+  "group": "dose",
+  "acc": 1.0,
+  "params": 117509,
+  "survivor": true,
+  "sec": 35
+ }
+]

@@ -1,0 +1,71 @@
+[
+ {
+  "name": "aux_TRUE_100pct",
+  "group": "replicate",
+  "acc": 1.0,
+  "params": 117509,
+  "survivor": true,
+  "sec": 50
+ },
+ {
+  "name": "aux_head_unsupervised",
+  "group": "control",
+  "acc": 0.2025,
+  "params": 117509,
+  "survivor": false,
+  "sec": 36
+ },
+ {
+  "name": "aux_RANDOM_target",
+  "group": "control",
+  "acc": 0.20075,
+  "params": 117509,
+  "survivor": false,
+  "sec": 37
+ },
+ {
+  "name": "aux_WRONG_structured",
+  "group": "control",
+  "acc": 0.1965,
+  "params": 117509,
+  "survivor": false,
+  "sec": 36
+ },
+ {
+  "name": "aux_TRUE_25pct",
+  "group": "dose",
+  "acc": 0.788,
+  "params": 117509,
+  "survivor": true,
+  "sec": 37
+ },
+ {
+  "name": "aux_TRUE_05pct",
+  "group": "dose",
+  "acc": 0.205,
+  "params": 117509,
+  "survivor": false,
+  "sec": 37
+ },
+ {
+  "name": "aux_TRUE_01pct",
+  "group": "dose",
+  "acc": 0.20375,
+  "params": 117509,
+  "survivor": false,
+  "sec": 38
+ },
+ {
+  "name": "self_distill",
+  "group": "bootstrap",
+  "acc": 0.1915,
+  "params": 117509,
+  "survivor": false,
+  "sec": 39
+ },
+ {
+  "name": "bottleneck5_nosup",
+  "group": "architect",
+  "error": "one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 64]], which is output 0 of AsStrided, is at version 1; expected version 0 inste"
+ }
+]

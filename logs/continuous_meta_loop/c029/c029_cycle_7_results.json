@@ -1,0 +1,57 @@
+{
+  "experiment_name": "c029_cycle_7",
+  "updated_at": 1790107545.1373854,
+  "trial_count": 2,
+  "trials": [
+    {
+      "trial_id": "c029_cycle_7_gen_1",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.305,
+        "acc_std": 0.0,
+        "loss_mean": 1.528731369972229,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.3050). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107484.3086061
+    },
+    {
+      "trial_id": "c029_cycle_7_gen_2",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.305,
+        "acc_std": 0.0,
+        "loss_mean": 1.528731369972229,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.3050). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107545.137329
+    }
+  ]
+}

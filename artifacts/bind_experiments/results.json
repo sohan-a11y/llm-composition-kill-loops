@@ -1,0 +1,102 @@
+[
+ {
+  "task": "S5",
+  "mode": "baseline",
+  "k": 4,
+  "acc": 0.2025,
+  "chance": 0.2,
+  "n_inter": 3,
+  "params": 118271,
+  "sec": 57
+ },
+ {
+  "task": "S5",
+  "mode": "sum_noroles",
+  "k": 4,
+  "acc": 0.6645,
+  "chance": 0.2,
+  "n_inter": 3,
+  "params": 119246,
+  "sec": 58
+ },
+ {
+  "task": "S5",
+  "mode": "raw_multi",
+  "k": 4,
+  "acc": 0.496,
+  "chance": 0.2,
+  "n_inter": 3,
+  "params": 119246,
+  "sec": 75
+ },
+ {
+  "task": "S5",
+  "mode": "hrr",
+  "k": 4,
+  "acc": 1.0,
+  "chance": 0.2,
+  "n_inter": 3,
+  "params": 119246,
+  "sec": 84
+ },
+ {
+  "task": "S5",
+  "mode": "cot",
+  "k": 4,
+  "acc": 1.0,
+  "chance": 0.2,
+  "n_inter": 3,
+  "params": 118271,
+  "sec": 78
+ },
+ {
+  "task": "Affine",
+  "mode": "baseline",
+  "k": 4,
+  "acc": 0.062,
+  "chance": 0.058823529411764705,
+  "n_inter": 3,
+  "params": 120587,
+  "sec": 55
+ },
+ {
+  "task": "Affine",
+  "mode": "sum_noroles",
+  "k": 4,
+  "acc": 0.1475,
+  "chance": 0.058823529411764705,
+  "n_inter": 3,
+  "params": 123902,
+  "sec": 59
+ },
+ {
+  "task": "Affine",
+  "mode": "raw_multi",
+  "k": 4,
+  "acc": 0.1835,
+  "chance": 0.058823529411764705,
+  "n_inter": 3,
+  "params": 123902,
+  "sec": 71
+ },
+ {
+  "task": "Affine",
+  "mode": "hrr",
+  "k": 4,
+  "acc": 1.0,
+  "chance": 0.058823529411764705,
+  "n_inter": 3,
+  "params": 123902,
+  "sec": 70
+ },
+ {
+  "task": "Affine",
+  "mode": "cot",
+  "k": 4,
+  "acc": 1.0,
+  "chance": 0.058823529411764705,
+  "n_inter": 3,
+  "params": 120587,
+  "sec": 77
+ }
+]

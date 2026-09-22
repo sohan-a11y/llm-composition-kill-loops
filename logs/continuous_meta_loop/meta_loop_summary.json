@@ -1,0 +1,369 @@
+{
+  "cycles_completed": 7,
+  "history": [
+    {
+      "cycle": 1,
+      "duration_sec": 50.900928258895874,
+      "results": {
+        "c085": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 8,
+            "d_model": 64,
+            "threshold": 0.16999999999999998
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.25
+          }
+        },
+        "c094": {
+          "best_acc": 0.985,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 6,
+            "n_layers": 8,
+            "threshold": 0.55
+          }
+        },
+        "c095": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.3
+          }
+        },
+        "c029": {
+          "best_acc": 0.2975,
+          "config": {
+            "k": 2,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 2,
+      "duration_sec": 46.54586315155029,
+      "results": {
+        "c085": {
+          "best_acc": 0.9966666666666666,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 10,
+            "d_model": 64,
+            "threshold": 0.19
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.30000000000000004
+          }
+        },
+        "c094": {
+          "best_acc": 0.995,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 7,
+            "n_layers": 8,
+            "threshold": 0.5
+          }
+        },
+        "c095": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.35
+          }
+        },
+        "c029": {
+          "best_acc": 0.2075,
+          "config": {
+            "k": 3,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 3,
+      "duration_sec": 47.35863375663757,
+      "results": {
+        "c085": {
+          "best_acc": 0.9966666666666666,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 12,
+            "d_model": 64,
+            "threshold": 0.21
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.35000000000000003
+          }
+        },
+        "c094": {
+          "best_acc": 0.985,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 8,
+            "n_layers": 8,
+            "threshold": 0.55
+          }
+        },
+        "c095": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.4
+          }
+        },
+        "c029": {
+          "best_acc": 0.285,
+          "config": {
+            "k": 2,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 4,
+      "duration_sec": 50.25547122955322,
+      "results": {
+        "c085": {
+          "best_acc": 0.9966666666666666,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 14,
+            "d_model": 64,
+            "threshold": 0.22999999999999998
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.4
+          }
+        },
+        "c094": {
+          "best_acc": 1.0,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 9,
+            "n_layers": 8,
+            "threshold": 0.5
+          }
+        },
+        "c095": {
+          "best_acc": 0.9958333333333333,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.45
+          }
+        },
+        "c029": {
+          "best_acc": 0.2325,
+          "config": {
+            "k": 3,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 5,
+      "duration_sec": 50.85567545890808,
+      "results": {
+        "c085": {
+          "best_acc": 0.9866666666666666,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 16,
+            "d_model": 64,
+            "threshold": 0.25
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.45
+          }
+        },
+        "c094": {
+          "best_acc": 0.99,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 10,
+            "n_layers": 8,
+            "threshold": 0.55
+          }
+        },
+        "c095": {
+          "best_acc": 0.9625,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.5
+          }
+        },
+        "c029": {
+          "best_acc": 0.35,
+          "config": {
+            "k": 2,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 6,
+      "duration_sec": 73.15435934066772,
+      "results": {
+        "c085": {
+          "best_acc": 0.96,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 18,
+            "d_model": 64,
+            "threshold": 0.27
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.5
+          }
+        },
+        "c094": {
+          "best_acc": 0.985,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 11,
+            "n_layers": 8,
+            "threshold": 0.5
+          }
+        },
+        "c095": {
+          "best_acc": 0.7833333333333333,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.55
+          }
+        },
+        "c029": {
+          "best_acc": 0.2225,
+          "config": {
+            "k": 3,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 7,
+      "duration_sec": 100.72508645057678,
+      "results": {
+        "c085": {
+          "best_acc": 0.8933333333333333,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 20,
+            "d_model": 64,
+            "threshold": 0.29000000000000004
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.55
+          }
+        },
+        "c094": {
+          "best_acc": 1.0,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 12,
+            "n_layers": 8,
+            "threshold": 0.55
+          }
+        },
+        "c095": {
+          "best_acc": 0.6541666666666667,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.6
+          }
+        },
+        "c029": {
+          "best_acc": 0.305,
+          "config": {
+            "k": 2,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+[
+ {
+  "name": "baseline",
+  "hyp": "H1",
+  "acc": 0.2025,
+  "params": 117184,
+  "survivor": false,
+  "sec": 48
+ },
+ {
+  "name": "aux_intermediate",
+  "hyp": "H1",
+  "acc": 1.0,
+  "params": 117509,
+  "survivor": true,
+  "sec": 37
+ },
+ {
+  "name": "curriculum_20_60_120",
+  "hyp": "H1",
+  "acc": 0.43325,
+  "params": 117184,
+  "survivor": true,
+  "sec": 36
+ },
+ {
+  "name": "transfer_60_then_120",
+  "hyp": "H1",
+  "acc": 0.471,
+  "params": 117184,
+  "survivor": true,
+  "sec": 36
+ },
+ {
+  "name": "rope",
+  "hyp": "H2",
+  "acc": 0.202,
+  "params": 116608,
+  "survivor": false,
+  "sec": 45
+ },
+ {
+  "name": "no_positional",
+  "hyp": "H2",
+  "acc": 0.203,
+  "params": 116608,
+  "survivor": false,
+  "sec": 36
+ },
+ {
+  "name": "role_embeddings",
+  "hyp": "H2",
+  "acc": 0.1955,
+  "params": 117696,
+  "survivor": false,
+  "sec": 37
+ },
+ {
+  "name": "factored_perms",
+  "hyp": "H3",
+  "acc": 0.19825,
+  "params": 117696,
+  "survivor": false,
+  "sec": 90
+ },
+ {
+  "name": "wide_ffn_8x",
+  "hyp": "H3",
+  "acc": 0.1935,
+  "params": 183232,
+  "survivor": false,
+  "sec": 47
+ },
+ {
+  "name": "heads_16",
+  "hyp": "H3",
+  "acc": 0.2015,
+  "params": 117184,
+  "survivor": false,
+  "sec": 63
+ },
+ {
+  "name": "scratchpad_4",
+  "hyp": "H4",
+  "acc": 0.198,
+  "params": 117440,
+  "survivor": false,
+  "sec": 59
+ },
+ {
+  "name": "scratchpad_4_loops4",
+  "hyp": "H4",
+  "acc": 0.19625,
+  "params": 117440,
+  "survivor": false,
+  "sec": 233
+ }
+]

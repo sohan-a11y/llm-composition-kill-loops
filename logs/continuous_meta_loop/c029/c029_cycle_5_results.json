@@ -1,0 +1,82 @@
+{
+  "experiment_name": "c029_cycle_5",
+  "updated_at": 1790107371.2524788,
+  "trial_count": 3,
+  "trials": [
+    {
+      "trial_id": "c029_cycle_5_gen_1",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.35,
+        "acc_std": 0.0,
+        "loss_mean": 1.549635636806488,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.3500). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107328.14017
+    },
+    {
+      "trial_id": "c029_cycle_5_gen_1",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.35,
+        "acc_std": 0.0,
+        "loss_mean": 1.549635636806488,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.3500). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107348.1244447
+    },
+    {
+      "trial_id": "c029_cycle_5_gen_2",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.35,
+        "acc_std": 0.0,
+        "loss_mean": 1.549635636806488,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Moderate composition (0.3500). Intermediate states partially preserved; tuning channel allocation or learning rate recommended.",
+      "timestamp": 1790107371.2524736
+    }
+  ]
+}

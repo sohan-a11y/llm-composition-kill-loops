@@ -1,0 +1,82 @@
+[
+ {
+  "name": "baseline_0pct",
+  "group": "control",
+  "frac": 0.0,
+  "kind": "true",
+  "acc": 0.06075,
+  "params": 119452
+ },
+ {
+  "name": "random_100pct",
+  "group": "control",
+  "frac": 1.0,
+  "kind": "random",
+  "acc": 0.063,
+  "params": 119452
+ },
+ {
+  "name": "true_5pct",
+  "group": "dose",
+  "frac": 0.05,
+  "kind": "true",
+  "acc": 0.06425,
+  "params": 119452
+ },
+ {
+  "name": "true_10pct",
+  "group": "dose",
+  "frac": 0.1,
+  "kind": "true",
+  "acc": 0.0615,
+  "params": 119452
+ },
+ {
+  "name": "true_15pct",
+  "group": "dose",
+  "frac": 0.15,
+  "kind": "true",
+  "acc": 0.0575,
+  "params": 119452
+ },
+ {
+  "name": "true_20pct",
+  "group": "dose",
+  "frac": 0.2,
+  "kind": "true",
+  "acc": 0.058,
+  "params": 119452
+ },
+ {
+  "name": "true_25pct",
+  "group": "dose",
+  "frac": 0.25,
+  "kind": "true",
+  "acc": 0.0575,
+  "params": 119452
+ },
+ {
+  "name": "true_35pct",
+  "group": "dose",
+  "frac": 0.35,
+  "kind": "true",
+  "acc": 0.058,
+  "params": 119452
+ },
+ {
+  "name": "true_50pct",
+  "group": "dose",
+  "frac": 0.5,
+  "kind": "true",
+  "acc": 0.059,
+  "params": 119452
+ },
+ {
+  "name": "true_100pct",
+  "group": "dose",
+  "frac": 1.0,
+  "kind": "true",
+  "acc": 0.0645,
+  "params": 119452
+ }
+]

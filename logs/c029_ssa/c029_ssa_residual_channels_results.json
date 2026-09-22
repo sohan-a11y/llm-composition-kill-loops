@@ -1,0 +1,82 @@
+{
+  "experiment_name": "c029_ssa_residual_channels",
+  "updated_at": 1790105182.3201385,
+  "trial_count": 3,
+  "trials": [
+    {
+      "trial_id": "c029_ssa_residual_channels_gen_1",
+      "config": {
+        "k": 3,
+        "domain": 50,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 12,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.23249999999999998,
+        "acc_std": 0.0049999999999999906,
+        "loss_mean": 1.6175717175006867,
+        "loss_std": 0.003651648759841919,
+        "n_params_mean": 109695.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790104995.7700684
+    },
+    {
+      "trial_id": "c029_ssa_residual_channels_gen_2",
+      "config": {
+        "k": 3,
+        "domain": 50,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 12,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.23249999999999998,
+        "acc_std": 0.0049999999999999906,
+        "loss_mean": 1.6175717175006867,
+        "loss_std": 0.003651648759841919,
+        "n_params_mean": 109695.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790105108.7135534
+    },
+    {
+      "trial_id": "c029_ssa_residual_channels_gen_3",
+      "config": {
+        "k": 3,
+        "domain": 50,
+        "layers": 4,
+        "d_model": 96,
+        "heads": 4,
+        "lr": 0.002,
+        "epochs": 12,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.21125,
+        "acc_std": 0.0037500000000000033,
+        "loss_mean": 1.61620891392231,
+        "loss_std": 1.774728298187256e-05,
+        "n_params_mean": 232063.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2112). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790105182.3200662
+    }
+  ]
+}
