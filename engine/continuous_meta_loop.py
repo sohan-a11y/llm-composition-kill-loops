@@ -24,6 +24,7 @@ from projects.c132_soliton_residual.eval_soliton import evaluate_soliton, sanity
 from projects.c134_padic_tree_cache.eval_padic import evaluate_padic, sanity_check_padic, kill_control_padic
 from projects.c126_vector_clock_attention.eval_vc import evaluate_vc, sanity_check_vc, kill_control_vc
 from projects.c131_dijkstra_ring.eval_dijkstra import evaluate_dijkstra, sanity_check_dijkstra, kill_control_dijkstra
+from projects.c146_fluxoid_quantization.eval_fluxoid import evaluate_fluxoid, sanity_check_fluxoid, kill_control_fluxoid
 
 
 
@@ -284,6 +285,30 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             cycle_results["c131"] = {"best_acc": res_c131["best_score"], "config": res_c131["best_config"]}
         except Exception as e:
             print(f"[ERROR in C131]: {e}")
+            traceback.print_exc()
+
+        # -------------------------------------------------------------
+        # 11. Project C146: Superconducting Fluxoid Quantization KV Cache Gating
+        # -------------------------------------------------------------
+        try:
+            fluxoid_epochs = 35 + (cycle * 5)
+            print(f"\n[Running C146] Fluxoid KV Cache Gating (n_flux=4, epochs: {fluxoid_epochs})")
+            loop_c146 = SelfImprovingLoop(
+                experiment_name=f"c146_cycle_{cycle}",
+                initial_config={"d_model": 32, "n_heads": 2, "n_classes": 5, "n_flux": 4, "sigma_vortex": 0.15, "seq_len": 10, "n_train": 400, "n_test": 300, "epochs": fluxoid_epochs, "lr": 0.01},
+                train_and_eval_fn=evaluate_fluxoid,
+                sanity_check_fn=sanity_check_fluxoid,
+                kill_control_fn=kill_control_fluxoid,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "epochs": best_config["epochs"] + 5 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c146"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c146 = loop_c146.run_cycle()
+            cycle_results["c146"] = {"best_acc": res_c146["best_score"], "config": res_c146["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C146]: {e}")
             traceback.print_exc()
 
         cycle_elapsed = time.time() - cycle_start

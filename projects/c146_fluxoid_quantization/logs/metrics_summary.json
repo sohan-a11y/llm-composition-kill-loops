@@ -1,0 +1,11 @@
+{
+  "mean_acc": 1.0,
+  "std_acc": 0.0,
+  "sanity_acc": 1.0,
+  "kill_acc": 0.1783333346247673,
+  "mean_kill_slip": 0.1783333346247673,
+  "mean_kill_scramble": 0.35333332419395447,
+  "chance": 0.2,
+  "passed_sanity": true,
+  "passed_kill": true
+}
