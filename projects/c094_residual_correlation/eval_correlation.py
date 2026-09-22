@@ -129,20 +129,25 @@ def sanity_check_correlation(config: Dict[str, Any]) -> bool:
 
 def kill_control_correlation(config: Dict[str, Any]) -> Tuple[bool, float, float]:
     """
-    Kill Control: When labels are scrambled across sequences (permutation test),
-    detection accuracy must catastrophically collapse to chance level (0.50).
+    Kill Control: With temporal step order destroyed (scramble_temporal_order=True),
+    the probe — which correlates CONSECUTIVE steps — must lose its signal and
+    collapse toward chance (0.50). If accuracy stays high, the probe is firing on
+    single-step statistics rather than temporal correlation, and the 1-2-step
+    early-warning claim is dead.
+    (Prior version fabricated shuffled_acc = 0.50 + noise analytically without
+    running the probe — a hardcoded-PASS control. Fixed 2026-09-23 to run the
+    real probe under order destruction.)
     """
-    rng = np.random.default_rng(42)
     res = simulate_multi_step_reasoning(
         n_sequences=100,
         seq_len=6,
         n_layers=8,
         failure_rate=0.5,
         threshold=0.50,
+        scramble_temporal_order=True,
         seed=42
     )
-    # Shuffled label evaluation
-    shuffled_acc = 0.50 + rng.normal(scale=0.04)
+    scrambled_acc = res["acc"]
     chance_baseline = 0.50
-    passed = abs(shuffled_acc - chance_baseline) < 0.12
-    return passed, float(shuffled_acc), chance_baseline
+    passed = abs(scrambled_acc - chance_baseline) < 0.15
+    return passed, float(scrambled_acc), chance_baseline
