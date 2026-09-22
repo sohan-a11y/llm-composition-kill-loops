@@ -1,0 +1,98 @@
+{
+ "task": "S5 state tracking (track one element through k permutations of S_5)",
+ "note": "S_5 is non-solvable; its word problem is NC1-complete. Fixed-depth log-precision transformers are in uniform TC0 (Merrill and Sabharwal, TACL 2023).",
+ "sanity": [
+  {
+   "k": 1,
+   "arm": "one-shot",
+   "d": 64,
+   "steps": 1500,
+   "acc": 1.0,
+   "chance": 0.2,
+   "note": "pure lookup, no composition - setup verified working"
+  }
+ ],
+ "composition_cliff_k2_2000steps_d64": [
+  {
+   "domain": 5,
+   "acc": 1.0
+  },
+  {
+   "domain": 20,
+   "acc": 1.0
+  },
+  {
+   "domain": 60,
+   "acc": 0.9975
+  },
+  {
+   "domain": 80,
+   "acc": 0.9862
+  },
+  {
+   "domain": 100,
+   "acc": 0.2032
+  },
+  {
+   "domain": 110,
+   "acc": 0.2095
+  },
+  {
+   "domain": 120,
+   "acc": 0.1953
+  }
+ ],
+ "nothing_fixes_domain120_k2": [
+  {
+   "lever": "width",
+   "setting": "d=64 -> 128 (3.7x params)",
+   "acc_before": 0.1985,
+   "acc_after": 0.2037
+  },
+  {
+   "lever": "depth",
+   "setting": "layers 2 -> 4",
+   "acc_before": 0.1985,
+   "acc_after": 0.201
+  },
+  {
+   "lever": "looped depth",
+   "setting": "loops 1 -> 2 (same params)",
+   "acc_before": 0.1985,
+   "acc_after": 0.1925
+  },
+  {
+   "lever": "training",
+   "setting": "3000 -> 8000 steps",
+   "acc_before": 0.1985,
+   "acc_after": 0.2032
+  }
+ ],
+ "serial_compute_fixes_it": [
+  {
+   "arm": "one-shot",
+   "d": 128,
+   "params": 430463,
+   "k": 2,
+   "domain": 120,
+   "acc": 0.2037
+  },
+  {
+   "arm": "CoT",
+   "d": 64,
+   "params": 116991,
+   "k": 2,
+   "domain": 120,
+   "acc": 1.0
+  },
+  {
+   "arm": "CoT",
+   "d": 64,
+   "params": 117247,
+   "k": 4,
+   "domain": 120,
+   "acc": 1.0
+  }
+ ],
+ "chance": 0.2
+}

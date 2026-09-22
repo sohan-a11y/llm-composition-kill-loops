@@ -1,0 +1,365 @@
+{
+ "affine_cliff": [
+  {
+   "domain": 5,
+   "acc": 1.0
+  },
+  {
+   "domain": 20,
+   "acc": 0.98825
+  },
+  {
+   "domain": 40,
+   "acc": 0.05425
+  },
+  {
+   "domain": 80,
+   "acc": 0.0645
+  },
+  {
+   "domain": 120,
+   "acc": 0.06075
+  },
+  {
+   "domain": 160,
+   "acc": 0.0635
+  },
+  {
+   "domain": 200,
+   "acc": 0.05375
+  },
+  {
+   "domain": 240,
+   "acc": 0.05125
+  },
+  {
+   "domain": 280,
+   "acc": 0.0585
+  }
+ ],
+ "affine_dose": [
+  {
+   "name": "baseline_0pct",
+   "group": "control",
+   "frac": 0.0,
+   "kind": "true",
+   "acc": 0.06075,
+   "params": 119452
+  },
+  {
+   "name": "random_100pct",
+   "group": "control",
+   "frac": 1.0,
+   "kind": "random",
+   "acc": 0.063,
+   "params": 119452
+  },
+  {
+   "name": "true_5pct",
+   "group": "dose",
+   "frac": 0.05,
+   "kind": "true",
+   "acc": 0.06425,
+   "params": 119452
+  },
+  {
+   "name": "true_10pct",
+   "group": "dose",
+   "frac": 0.1,
+   "kind": "true",
+   "acc": 0.0615,
+   "params": 119452
+  },
+  {
+   "name": "true_15pct",
+   "group": "dose",
+   "frac": 0.15,
+   "kind": "true",
+   "acc": 0.0575,
+   "params": 119452
+  },
+  {
+   "name": "true_20pct",
+   "group": "dose",
+   "frac": 0.2,
+   "kind": "true",
+   "acc": 0.058,
+   "params": 119452
+  },
+  {
+   "name": "true_25pct",
+   "group": "dose",
+   "frac": 0.25,
+   "kind": "true",
+   "acc": 0.0575,
+   "params": 119452
+  },
+  {
+   "name": "true_35pct",
+   "group": "dose",
+   "frac": 0.35,
+   "kind": "true",
+   "acc": 0.058,
+   "params": 119452
+  },
+  {
+   "name": "true_50pct",
+   "group": "dose",
+   "frac": 0.5,
+   "kind": "true",
+   "acc": 0.059,
+   "params": 119452
+  },
+  {
+   "name": "true_100pct",
+   "group": "dose",
+   "frac": 1.0,
+   "kind": "true",
+   "acc": 0.0645,
+   "params": 119452
+  }
+ ],
+ "cot_dose": [
+  {
+   "frac": 0.0,
+   "acc": 0.06125
+  },
+  {
+   "frac": 0.05,
+   "acc": 0.0585
+  },
+  {
+   "frac": 0.1,
+   "acc": 0.0645
+  },
+  {
+   "frac": 0.25,
+   "acc": 0.05375
+  }
+ ],
+ "screen1_variants": [
+  {
+   "name": "baseline",
+   "hyp": "H1",
+   "acc": 0.2025,
+   "params": 117184,
+   "survivor": false,
+   "sec": 48
+  },
+  {
+   "name": "aux_intermediate",
+   "hyp": "H1",
+   "acc": 1.0,
+   "params": 117509,
+   "survivor": true,
+   "sec": 37
+  },
+  {
+   "name": "curriculum_20_60_120",
+   "hyp": "H1",
+   "acc": 0.43325,
+   "params": 117184,
+   "survivor": true,
+   "sec": 36
+  },
+  {
+   "name": "transfer_60_then_120",
+   "hyp": "H1",
+   "acc": 0.471,
+   "params": 117184,
+   "survivor": true,
+   "sec": 36
+  },
+  {
+   "name": "rope",
+   "hyp": "H2",
+   "acc": 0.202,
+   "params": 116608,
+   "survivor": false,
+   "sec": 45
+  },
+  {
+   "name": "no_positional",
+   "hyp": "H2",
+   "acc": 0.203,
+   "params": 116608,
+   "survivor": false,
+   "sec": 36
+  },
+  {
+   "name": "role_embeddings",
+   "hyp": "H2",
+   "acc": 0.1955,
+   "params": 117696,
+   "survivor": false,
+   "sec": 37
+  },
+  {
+   "name": "factored_perms",
+   "hyp": "H3",
+   "acc": 0.19825,
+   "params": 117696,
+   "survivor": false,
+   "sec": 90
+  },
+  {
+   "name": "wide_ffn_8x",
+   "hyp": "H3",
+   "acc": 0.1935,
+   "params": 183232,
+   "survivor": false,
+   "sec": 47
+  },
+  {
+   "name": "heads_16",
+   "hyp": "H3",
+   "acc": 0.2015,
+   "params": 117184,
+   "survivor": false,
+   "sec": 63
+  },
+  {
+   "name": "scratchpad_4",
+   "hyp": "H4",
+   "acc": 0.198,
+   "params": 117440,
+   "survivor": false,
+   "sec": 59
+  },
+  {
+   "name": "scratchpad_4_loops4",
+   "hyp": "H4",
+   "acc": 0.19625,
+   "params": 117440,
+   "survivor": false,
+   "sec": 233
+  }
+ ],
+ "screen2_controls": [
+  {
+   "name": "aux_TRUE_100pct",
+   "group": "replicate",
+   "acc": 1.0,
+   "params": 117509,
+   "survivor": true,
+   "sec": 50
+  },
+  {
+   "name": "aux_head_unsupervised",
+   "group": "control",
+   "acc": 0.2025,
+   "params": 117509,
+   "survivor": false,
+   "sec": 36
+  },
+  {
+   "name": "aux_RANDOM_target",
+   "group": "control",
+   "acc": 0.20075,
+   "params": 117509,
+   "survivor": false,
+   "sec": 37
+  },
+  {
+   "name": "aux_WRONG_structured",
+   "group": "control",
+   "acc": 0.1965,
+   "params": 117509,
+   "survivor": false,
+   "sec": 36
+  },
+  {
+   "name": "aux_TRUE_25pct",
+   "group": "dose",
+   "acc": 0.788,
+   "params": 117509,
+   "survivor": true,
+   "sec": 37
+  },
+  {
+   "name": "aux_TRUE_05pct",
+   "group": "dose",
+   "acc": 0.205,
+   "params": 117509,
+   "survivor": false,
+   "sec": 37
+  },
+  {
+   "name": "aux_TRUE_01pct",
+   "group": "dose",
+   "acc": 0.20375,
+   "params": 117509,
+   "survivor": false,
+   "sec": 38
+  },
+  {
+   "name": "self_distill",
+   "group": "bootstrap",
+   "acc": 0.1915,
+   "params": 117509,
+   "survivor": false,
+   "sec": 39
+  },
+  {
+   "name": "bottleneck5_nosup",
+   "group": "architect",
+   "error": "one of the variables needed for gradient computation has been modified by an inplace operation: [torch.FloatTensor [256, 64]], which is output 0 of AsStrided, is at version 1; expected version 0 inste"
+  }
+ ],
+ "screen3_arch": [
+  {
+   "name": "bottleneck5_nosup",
+   "group": "architect",
+   "acc": 0.19775,
+   "params": 117829,
+   "survivor": false,
+   "sec": 47
+  },
+  {
+   "name": "bottleneck5_aux",
+   "group": "architect",
+   "acc": 0.20525,
+   "params": 118154,
+   "survivor": false,
+   "sec": 35
+  },
+  {
+   "name": "aux_TRUE_10pct",
+   "group": "dose",
+   "acc": 0.1935,
+   "params": 117509,
+   "survivor": false,
+   "sec": 33
+  },
+  {
+   "name": "aux_TRUE_15pct",
+   "group": "dose",
+   "acc": 0.1955,
+   "params": 117509,
+   "survivor": false,
+   "sec": 33
+  },
+  {
+   "name": "aux_TRUE_50pct",
+   "group": "dose",
+   "acc": 1.0,
+   "params": 117509,
+   "survivor": true,
+   "sec": 35
+  }
+ ],
+ "headline": {
+  "cliff_S5": "domain 80 -> 100, accuracy 0.9862 -> 0.2032 (chance 0.2)",
+  "cliff_affine": "domain 20 -> 40, accuracy 0.9882 -> 0.0542 (chance 0.0588)",
+  "aux_hidden_state": {
+   "S5": 1.0,
+   "affine": 0.0645
+  },
+  "token_CoT": {
+   "S5": 1.0,
+   "affine": 1.0
+  },
+  "affine_diagnostic": "aux head reaches 1.0000 intermediate accuracy by step 1500 while final task stays at chance",
+  "conclusion": "intermediate must re-enter the token stream; presence in the residual stream is not sufficient"
+ }
+}
