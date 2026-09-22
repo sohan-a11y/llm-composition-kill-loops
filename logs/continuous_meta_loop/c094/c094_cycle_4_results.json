@@ -1,7 +1,7 @@
 {
   "experiment_name": "c094_cycle_4",
-  "updated_at": 1790112061.6383176,
-  "trial_count": 5,
+  "updated_at": 1790112843.5992477,
+  "trial_count": 7,
   "trials": [
     {
       "trial_id": "c094_cycle_4_gen_1",
@@ -24,7 +24,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112058.6503954
+      "timestamp": 1790112840.4945366
     },
     {
       "trial_id": "c094_cycle_4_gen_1",
@@ -47,7 +47,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112058.650398
+      "timestamp": 1790112840.494539
     },
     {
       "trial_id": "c094_cycle_4_gen_2",
@@ -70,7 +70,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112058.6503994
+      "timestamp": 1790112840.4945402
     },
     {
       "trial_id": "c094_cycle_4_gen_1",
@@ -93,7 +93,7 @@
       "sanity_passed": true,
       "kill_control_passed": false,
       "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
-      "timestamp": 1790112060.1841967
+      "timestamp": 1790112840.4945414
     },
     {
       "trial_id": "c094_cycle_4_gen_2",
@@ -116,7 +116,53 @@
       "sanity_passed": true,
       "kill_control_passed": false,
       "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
-      "timestamp": 1790112061.6383166
+      "timestamp": 1790112840.4945424
+    },
+    {
+      "trial_id": "c094_cycle_4_gen_1",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 9,
+        "n_layers": 8,
+        "threshold": 0.5
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "tpr_mean": 0.9999999997913043,
+        "tpr_std": 8.695655307100031e-12,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.9265217389371909,
+        "early_lead_rate_std": 0.013478260874809078
+      },
+      "sanity_passed": true,
+      "kill_control_passed": false,
+      "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
+      "timestamp": 1790112842.0859063
+    },
+    {
+      "trial_id": "c094_cycle_4_gen_2",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 9,
+        "n_layers": 8,
+        "threshold": 0.55
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "tpr_mean": 0.9999999997913043,
+        "tpr_std": 8.695655307100031e-12,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.9373913041522193,
+        "early_lead_rate_std": 0.0026086956597807243
+      },
+      "sanity_passed": true,
+      "kill_control_passed": false,
+      "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
+      "timestamp": 1790112843.5992463
     }
   ]
 }

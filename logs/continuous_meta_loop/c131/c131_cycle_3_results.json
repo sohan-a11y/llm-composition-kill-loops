@@ -1,7 +1,7 @@
 {
   "experiment_name": "c131_cycle_3",
-  "updated_at": 1790112052.9670475,
-  "trial_count": 2,
+  "updated_at": 1790112832.4370902,
+  "trial_count": 4,
   "trials": [
     {
       "trial_id": "c131_cycle_3_gen_1",
@@ -24,7 +24,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9983). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112050.1096957
+      "timestamp": 1790112826.433547
     },
     {
       "trial_id": "c131_cycle_3_gen_2",
@@ -47,7 +47,53 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9983). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112052.9670458
+      "timestamp": 1790112826.4335506
+    },
+    {
+      "trial_id": "c131_cycle_3_gen_1",
+      "config": {
+        "d_model": 32,
+        "K": 4,
+        "M": 5,
+        "num_classes": 5,
+        "epochs": 90,
+        "batch_size": 64,
+        "seq_len": 6,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.9983333349227905,
+        "acc_std": 0.0016666650772094727,
+        "mutex_conv_mean": 1.0,
+        "mutex_conv_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9983). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112829.5341926
+    },
+    {
+      "trial_id": "c131_cycle_3_gen_2",
+      "config": {
+        "d_model": 32,
+        "K": 4,
+        "M": 5,
+        "num_classes": 5,
+        "epochs": 90,
+        "batch_size": 64,
+        "seq_len": 6,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.9983333349227905,
+        "acc_std": 0.0016666650772094727,
+        "mutex_conv_mean": 1.0,
+        "mutex_conv_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9983). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112832.4370887
     }
   ]
 }

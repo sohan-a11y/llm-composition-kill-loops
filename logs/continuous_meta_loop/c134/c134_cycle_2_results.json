@@ -1,7 +1,7 @@
 {
   "experiment_name": "c134_cycle_2",
-  "updated_at": 1790111936.1263845,
-  "trial_count": 2,
+  "updated_at": 1790112760.114407,
+  "trial_count": 4,
   "trials": [
     {
       "trial_id": "c134_cycle_2_gen_1",
@@ -23,7 +23,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111931.5676136
+      "timestamp": 1790112755.6792822
     },
     {
       "trial_id": "c134_cycle_2_gen_2",
@@ -45,7 +45,51 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111936.1263807
+      "timestamp": 1790112755.6792846
+    },
+    {
+      "trial_id": "c134_cycle_2_gen_1",
+      "config": {
+        "n_samples": 300,
+        "d_model": 32,
+        "n_classes": 5,
+        "penalty": 12.0,
+        "p": 2,
+        "epochs": 20,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "target_attn_mass_mean": 0.9087522327899933,
+        "target_attn_mass_std": 2.2202730178833008e-05
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112757.801682
+    },
+    {
+      "trial_id": "c134_cycle_2_gen_2",
+      "config": {
+        "n_samples": 300,
+        "d_model": 32,
+        "n_classes": 5,
+        "penalty": 12.0,
+        "p": 2,
+        "epochs": 20,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "target_attn_mass_mean": 0.9087522327899933,
+        "target_attn_mass_std": 2.2202730178833008e-05
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112760.1144044
     }
   ]
 }

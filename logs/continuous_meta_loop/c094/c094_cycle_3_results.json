@@ -1,7 +1,7 @@
 {
   "experiment_name": "c094_cycle_3",
-  "updated_at": 1790111964.939347,
-  "trial_count": 7,
+  "updated_at": 1790112781.4644744,
+  "trial_count": 9,
   "trials": [
     {
       "trial_id": "c094_cycle_3_gen_1",
@@ -24,7 +24,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9800). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111961.442065
+      "timestamp": 1790112778.28797
     },
     {
       "trial_id": "c094_cycle_3_gen_1",
@@ -47,7 +47,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9800). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111961.442067
+      "timestamp": 1790112778.2879727
     },
     {
       "trial_id": "c094_cycle_3_gen_2",
@@ -70,7 +70,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9850). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111961.4420679
+      "timestamp": 1790112778.2879736
     },
     {
       "trial_id": "c094_cycle_3_gen_1",
@@ -93,7 +93,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9800). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111961.4420686
+      "timestamp": 1790112778.2879744
     },
     {
       "trial_id": "c094_cycle_3_gen_2",
@@ -116,7 +116,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9850). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111961.4420695
+      "timestamp": 1790112778.2879753
     },
     {
       "trial_id": "c094_cycle_3_gen_1",
@@ -139,7 +139,7 @@
       "sanity_passed": true,
       "kill_control_passed": false,
       "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
-      "timestamp": 1790111963.501615
+      "timestamp": 1790112778.2879763
     },
     {
       "trial_id": "c094_cycle_3_gen_2",
@@ -162,7 +162,53 @@
       "sanity_passed": true,
       "kill_control_passed": false,
       "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
-      "timestamp": 1790111964.9393458
+      "timestamp": 1790112778.2879772
+    },
+    {
+      "trial_id": "c094_cycle_3_gen_1",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 8,
+        "n_layers": 8,
+        "threshold": 0.5
+      },
+      "metrics": {
+        "acc_mean": 0.98,
+        "acc_std": 0.010000000000000009,
+        "tpr_mean": 0.9577759195365299,
+        "tpr_std": 0.022993311044091358,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.8975752506523311,
+        "early_lead_rate_std": 0.006270903020006047
+      },
+      "sanity_passed": true,
+      "kill_control_passed": false,
+      "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
+      "timestamp": 1790112779.9823709
+    },
+    {
+      "trial_id": "c094_cycle_3_gen_2",
+      "config": {
+        "n_sequences": 100,
+        "seq_len": 8,
+        "n_layers": 8,
+        "threshold": 0.55
+      },
+      "metrics": {
+        "acc_mean": 0.985,
+        "acc_std": 0.0050000000000000044,
+        "tpr_mean": 0.9686454847515582,
+        "tpr_std": 0.012123745829063004,
+        "fpr_mean": 0.0,
+        "fpr_std": 0.0,
+        "early_lead_rate_mean": 0.9084448158673595,
+        "early_lead_rate_std": 0.004598662195022307
+      },
+      "sanity_passed": true,
+      "kill_control_passed": false,
+      "notes": "LETHAL COLLAPSE: Negative control arm failed to drop to chance level; information leakage suspected.",
+      "timestamp": 1790112781.464473
     }
   ]
 }

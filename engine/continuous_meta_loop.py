@@ -26,6 +26,7 @@ from projects.c126_vector_clock_attention.eval_vc import evaluate_vc, sanity_che
 from projects.c131_dijkstra_ring.eval_dijkstra import evaluate_dijkstra, sanity_check_dijkstra, kill_control_dijkstra
 from projects.c146_fluxoid_quantization.eval_fluxoid import evaluate_fluxoid, sanity_check_fluxoid, kill_control_fluxoid
 from projects.c168_topoisomerase_attention.eval_topo import evaluate_topo, sanity_check_topo, kill_control_topo
+from projects.c172_majorana_kv_cache.eval_majorana import evaluate_majorana, sanity_check_majorana, kill_control_majorana
 
 
 
@@ -334,6 +335,30 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             cycle_results["c168"] = {"best_acc": res_c168["best_score"], "config": res_c168["best_config"]}
         except Exception as e:
             print(f"[ERROR in C168]: {e}")
+            traceback.print_exc()
+
+        # -------------------------------------------------------------
+        # 13. Project C172: Majorana Zero-Mode Non-Abelian Anyon Braiding KV Cache
+        # -------------------------------------------------------------
+        try:
+            mzm_epochs = 35 + (cycle * 5)
+            print(f"\n[Running C172] Majorana KV Attention (epochs: {mzm_epochs})")
+            loop_c172 = SelfImprovingLoop(
+                experiment_name=f"c172_cycle_{cycle}",
+                initial_config={"d_model": 32, "n_heads": 2, "n_classes": 5, "lambda_topological": 30.0, "seq_len": 8, "n_train": 400, "n_test": 300, "epochs": mzm_epochs, "lr": 0.01},
+                train_and_eval_fn=evaluate_majorana,
+                sanity_check_fn=sanity_check_majorana,
+                kill_control_fn=kill_control_majorana,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "epochs": best_config["epochs"] + 5 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c172"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c172 = loop_c172.run_cycle()
+            cycle_results["c172"] = {"best_acc": res_c172["best_score"], "config": res_c172["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C172]: {e}")
             traceback.print_exc()
 
         cycle_elapsed = time.time() - cycle_start

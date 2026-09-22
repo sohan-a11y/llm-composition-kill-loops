@@ -1,7 +1,7 @@
 {
   "experiment_name": "c168_cycle_1",
-  "updated_at": 1790112635.5981772,
-  "trial_count": 2,
+  "updated_at": 1790113098.4482725,
+  "trial_count": 6,
   "trials": [
     {
       "trial_id": "c168_cycle_1_gen_1",
@@ -30,7 +30,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9967). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112634.2313654
+      "timestamp": 1790113095.8292496
     },
     {
       "trial_id": "c168_cycle_1_gen_2",
@@ -59,7 +59,123 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (0.9967). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112635.5981753
+      "timestamp": 1790113095.8292534
+    },
+    {
+      "trial_id": "c168_cycle_1_gen_1",
+      "config": {
+        "d_model": 32,
+        "n_heads": 2,
+        "n_classes": 5,
+        "delta_knot": 1.5,
+        "lambda_strand": 40.0,
+        "seq_len": 6,
+        "n_train": 400,
+        "n_test": 300,
+        "epochs": 40,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.996666669845581,
+        "acc_std": 0.0,
+        "acc_std_mean": 0.5850000083446503,
+        "acc_std_std": 0.3916666805744171,
+        "acc_anti_mean": 0.09333333559334278,
+        "acc_anti_std": 0.04333333484828472,
+        "acc_scram_mean": 0.4883333146572113,
+        "acc_scram_std": 0.09833332896232605
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9967). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113095.8292553
+    },
+    {
+      "trial_id": "c168_cycle_1_gen_2",
+      "config": {
+        "d_model": 32,
+        "n_heads": 2,
+        "n_classes": 5,
+        "delta_knot": 1.5,
+        "lambda_strand": 40.0,
+        "seq_len": 6,
+        "n_train": 400,
+        "n_test": 300,
+        "epochs": 40,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.996666669845581,
+        "acc_std": 0.0,
+        "acc_std_mean": 0.5850000083446503,
+        "acc_std_std": 0.3916666805744171,
+        "acc_anti_mean": 0.09333333559334278,
+        "acc_anti_std": 0.04333333484828472,
+        "acc_scram_mean": 0.4883333146572113,
+        "acc_scram_std": 0.09833332896232605
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9967). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113095.8292572
+    },
+    {
+      "trial_id": "c168_cycle_1_gen_1",
+      "config": {
+        "d_model": 32,
+        "n_heads": 2,
+        "n_classes": 5,
+        "delta_knot": 1.5,
+        "lambda_strand": 40.0,
+        "seq_len": 6,
+        "n_train": 400,
+        "n_test": 300,
+        "epochs": 40,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.996666669845581,
+        "acc_std": 0.0,
+        "acc_std_mean": 0.5850000083446503,
+        "acc_std_std": 0.3916666805744171,
+        "acc_anti_mean": 0.09333333559334278,
+        "acc_anti_std": 0.04333333484828472,
+        "acc_scram_mean": 0.4883333146572113,
+        "acc_scram_std": 0.09833332896232605
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9967). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113097.2007184
+    },
+    {
+      "trial_id": "c168_cycle_1_gen_2",
+      "config": {
+        "d_model": 32,
+        "n_heads": 2,
+        "n_classes": 5,
+        "delta_knot": 1.5,
+        "lambda_strand": 40.0,
+        "seq_len": 6,
+        "n_train": 400,
+        "n_test": 300,
+        "epochs": 40,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.996666669845581,
+        "acc_std": 0.0,
+        "acc_std_mean": 0.5850000083446503,
+        "acc_std_std": 0.3916666805744171,
+        "acc_anti_mean": 0.09333333559334278,
+        "acc_anti_std": 0.04333333484828472,
+        "acc_scram_mean": 0.4883333146572113,
+        "acc_scram_std": 0.09833332896232605
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9967). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113098.4482703
     }
   ]
 }

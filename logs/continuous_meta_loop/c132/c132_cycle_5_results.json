@@ -1,7 +1,7 @@
 {
   "experiment_name": "c132_cycle_5",
-  "updated_at": 1790112143.3719714,
-  "trial_count": 2,
+  "updated_at": 1790112999.7604477,
+  "trial_count": 4,
   "trials": [
     {
       "trial_id": "c132_cycle_5_gen_1",
@@ -24,7 +24,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112140.1364834
+      "timestamp": 1790112991.3185618
     },
     {
       "trial_id": "c132_cycle_5_gen_2",
@@ -47,7 +47,53 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112143.3719697
+      "timestamp": 1790112991.3185642
+    },
+    {
+      "trial_id": "c132_cycle_5_gen_1",
+      "config": {
+        "n_samples": 250,
+        "n_layers": 22,
+        "d_model": 32,
+        "n_classes": 5,
+        "beta": 0.13,
+        "nu": 0.03,
+        "epochs": 20,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "loss_mean": 2.575590980237507,
+        "loss_std": 2.575588810259319
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112995.5306177
+    },
+    {
+      "trial_id": "c132_cycle_5_gen_2",
+      "config": {
+        "n_samples": 250,
+        "n_layers": 22,
+        "d_model": 32,
+        "n_classes": 5,
+        "beta": 0.13,
+        "nu": 0.03,
+        "epochs": 20,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "loss_mean": 2.575590980237507,
+        "loss_std": 2.575588810259319
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112999.760445
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "experiment_name": "c131_cycle_2",
-  "updated_at": 1790111952.9874513,
-  "trial_count": 2,
+  "updated_at": 1790112771.1307113,
+  "trial_count": 4,
   "trials": [
     {
       "trial_id": "c131_cycle_2_gen_1",
@@ -24,7 +24,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111949.7120814
+      "timestamp": 1790112766.9901059
     },
     {
       "trial_id": "c131_cycle_2_gen_2",
@@ -47,7 +47,53 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790111952.9874504
+      "timestamp": 1790112766.990108
+    },
+    {
+      "trial_id": "c131_cycle_2_gen_1",
+      "config": {
+        "d_model": 32,
+        "K": 4,
+        "M": 5,
+        "num_classes": 5,
+        "epochs": 80,
+        "batch_size": 64,
+        "seq_len": 6,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "mutex_conv_mean": 1.0,
+        "mutex_conv_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112768.6805844
+    },
+    {
+      "trial_id": "c131_cycle_2_gen_2",
+      "config": {
+        "d_model": 32,
+        "K": 4,
+        "M": 5,
+        "num_classes": 5,
+        "epochs": 80,
+        "batch_size": 64,
+        "seq_len": 6,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "mutex_conv_mean": 1.0,
+        "mutex_conv_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112771.1307092
     }
   ]
 }

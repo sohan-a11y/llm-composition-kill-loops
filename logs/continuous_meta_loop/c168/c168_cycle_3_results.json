@@ -1,0 +1,65 @@
+{
+  "experiment_name": "c168_cycle_3",
+  "updated_at": 1790112839.8069577,
+  "trial_count": 2,
+  "trials": [
+    {
+      "trial_id": "c168_cycle_3_gen_1",
+      "config": {
+        "d_model": 32,
+        "n_heads": 2,
+        "n_classes": 5,
+        "delta_knot": 1.5,
+        "lambda_strand": 40.0,
+        "seq_len": 6,
+        "n_train": 400,
+        "n_test": 300,
+        "epochs": 50,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.9916666746139526,
+        "acc_std": 0.0016666650772094727,
+        "acc_std_mean": 0.9916666746139526,
+        "acc_std_std": 0.0016666650772094727,
+        "acc_anti_mean": 0.08833333104848862,
+        "acc_anti_std": 0.08833333104848862,
+        "acc_scram_mean": 0.6216666400432587,
+        "acc_scram_std": 0.028333336114883423
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9917). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112838.4865723
+    },
+    {
+      "trial_id": "c168_cycle_3_gen_2",
+      "config": {
+        "d_model": 32,
+        "n_heads": 2,
+        "n_classes": 5,
+        "delta_knot": 1.5,
+        "lambda_strand": 40.0,
+        "seq_len": 6,
+        "n_train": 400,
+        "n_test": 300,
+        "epochs": 50,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 0.9916666746139526,
+        "acc_std": 0.0016666650772094727,
+        "acc_std_mean": 0.9916666746139526,
+        "acc_std_std": 0.0016666650772094727,
+        "acc_anti_mean": 0.08833333104848862,
+        "acc_anti_std": 0.08833333104848862,
+        "acc_scram_mean": 0.6216666400432587,
+        "acc_scram_std": 0.028333336114883423
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (0.9917). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790112839.8069563
+    }
+  ]
+}

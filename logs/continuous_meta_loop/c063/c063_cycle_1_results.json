@@ -1,7 +1,7 @@
 {
   "experiment_name": "c063_cycle_1",
-  "updated_at": 1790112573.652963,
-  "trial_count": 23,
+  "updated_at": 1790113034.599571,
+  "trial_count": 27,
   "trials": [
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -18,7 +18,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4538848
+      "timestamp": 1790113034.4207673
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -35,7 +35,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.453888
+      "timestamp": 1790113034.4207692
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -52,7 +52,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4538896
+      "timestamp": 1790113034.4207704
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -69,7 +69,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.453891
+      "timestamp": 1790113034.4207711
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -86,7 +86,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.453893
+      "timestamp": 1790113034.4207716
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -103,7 +103,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4538941
+      "timestamp": 1790113034.4207723
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -120,7 +120,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4538963
+      "timestamp": 1790113034.420773
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -137,7 +137,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4538977
+      "timestamp": 1790113034.420774
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -154,7 +154,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.453899
+      "timestamp": 1790113034.4207745
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -171,7 +171,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539006
+      "timestamp": 1790113034.4207752
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -188,7 +188,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539018
+      "timestamp": 1790113034.4207757
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -205,7 +205,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539032
+      "timestamp": 1790113034.4207764
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -222,7 +222,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539044
+      "timestamp": 1790113034.4207768
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -239,7 +239,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539058
+      "timestamp": 1790113034.4207776
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -256,7 +256,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539073
+      "timestamp": 1790113034.4207783
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -273,7 +273,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539084
+      "timestamp": 1790113034.420779
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -290,7 +290,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.45391
+      "timestamp": 1790113034.4207795
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -307,7 +307,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539113
+      "timestamp": 1790113034.4207802
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -324,7 +324,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539135
+      "timestamp": 1790113034.420781
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -341,7 +341,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539146
+      "timestamp": 1790113034.4207816
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -358,7 +358,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.4539213
+      "timestamp": 1790113034.420782
     },
     {
       "trial_id": "c063_cycle_1_gen_1",
@@ -375,7 +375,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.5583787
+      "timestamp": 1790113034.4207828
     },
     {
       "trial_id": "c063_cycle_1_gen_2",
@@ -392,7 +392,75 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
-      "timestamp": 1790112573.652961
+      "timestamp": 1790113034.4207835
+    },
+    {
+      "trial_id": "c063_cycle_1_gen_1",
+      "config": {
+        "n_samples": 120,
+        "noise_level": 0.25
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "memory_savings_mean": 0.8181818181818182,
+        "memory_savings_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113034.4207842
+    },
+    {
+      "trial_id": "c063_cycle_1_gen_2",
+      "config": {
+        "n_samples": 120,
+        "noise_level": 0.3
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "memory_savings_mean": 0.8181818181818182,
+        "memory_savings_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113034.4207847
+    },
+    {
+      "trial_id": "c063_cycle_1_gen_1",
+      "config": {
+        "n_samples": 120,
+        "noise_level": 0.25
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "memory_savings_mean": 0.8181818181818182,
+        "memory_savings_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113034.5006795
+    },
+    {
+      "trial_id": "c063_cycle_1_gen_2",
+      "config": {
+        "n_samples": 120,
+        "noise_level": 0.3
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "memory_savings_mean": 0.8181818181818182,
+        "memory_savings_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790113034.5995688
     }
   ]
 }
