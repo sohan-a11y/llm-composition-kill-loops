@@ -1,0 +1,53 @@
+{
+  "experiment_name": "c131_cycle_1",
+  "updated_at": 1790111179.3671136,
+  "trial_count": 2,
+  "trials": [
+    {
+      "trial_id": "c131_cycle_1_gen_1",
+      "config": {
+        "d_model": 32,
+        "K": 4,
+        "M": 5,
+        "num_classes": 5,
+        "epochs": 70,
+        "batch_size": 64,
+        "seq_len": 6,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "mutex_conv_mean": 1.0,
+        "mutex_conv_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790111175.6270123
+    },
+    {
+      "trial_id": "c131_cycle_1_gen_2",
+      "config": {
+        "d_model": 32,
+        "K": 4,
+        "M": 5,
+        "num_classes": 5,
+        "epochs": 70,
+        "batch_size": 64,
+        "seq_len": 6,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "mutex_conv_mean": 1.0,
+        "mutex_conv_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790111179.3671112
+    }
+  ]
+}

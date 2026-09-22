@@ -14,9 +14,9 @@ import torch.nn.functional as F
 import numpy as np
 from typing import Dict, Any, Tuple
 
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from module import VectorClockReasoningModel
-from evaluate import generate_multistream_data, generate_serial_sanity_data
+from projects.c126_vector_clock_attention.module import VectorClockReasoningModel
+from projects.c126_vector_clock_attention.evaluate import generate_multistream_data, generate_serial_sanity_data
+
 
 
 def evaluate_vc(config: Dict[str, Any], seed: int = 42) -> Dict[str, float]:

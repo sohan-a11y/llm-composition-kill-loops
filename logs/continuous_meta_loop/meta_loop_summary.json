@@ -3,7 +3,7 @@
   "history": [
     {
       "cycle": 1,
-      "duration_sec": 86.6227867603302,
+      "duration_sec": 91.37697148323059,
       "results": {
         "c085": {
           "best_acc": 1.0,
@@ -95,6 +95,19 @@
             "num_classes": 5,
             "epochs": 70,
             "batch_size": 64,
+            "lr": 0.01
+          }
+        },
+        "c131": {
+          "best_acc": 1.0,
+          "config": {
+            "d_model": 32,
+            "K": 4,
+            "M": 5,
+            "num_classes": 5,
+            "epochs": 70,
+            "batch_size": 64,
+            "seq_len": 6,
             "lr": 0.01
           }
         }

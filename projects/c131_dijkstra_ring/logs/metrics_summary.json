@@ -1,0 +1,37 @@
+{
+  "project": "C131_dijkstra_ring",
+  "seeds": [
+    42,
+    137
+  ],
+  "avg_sanity_acc": 1.0,
+  "avg_fault_acc": 1.0,
+  "std_fault_acc": 0.0,
+  "avg_mutex_convergence": 1.0,
+  "avg_deadlock_acc": 0.18200000375509262,
+  "avg_scramble_acc": 0.18200000375509262,
+  "chance_baseline": 0.2,
+  "passed_sanity": true,
+  "passed_fault_tolerance": true,
+  "passed_mutex_convergence": true,
+  "passed_kill_controls": true,
+  "overall_pass": true,
+  "seed_details": [
+    {
+      "seed": 42,
+      "sanity_acc": 1.0,
+      "fault_acc": 1.0,
+      "mutex_convergence": 1.0,
+      "deadlock_acc": 0.18400000035762787,
+      "scramble_acc": 0.18400000035762787
+    },
+    {
+      "seed": 137,
+      "sanity_acc": 1.0,
+      "fault_acc": 1.0,
+      "mutex_convergence": 1.0,
+      "deadlock_acc": 0.18000000715255737,
+      "scramble_acc": 0.18000000715255737
+    }
+  ]
+}

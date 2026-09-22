@@ -17,7 +17,11 @@ import torch
 import torch.nn.functional as F
 from typing import Dict, Any, List, Tuple
 
-from module import VectorClockReasoningModel
+try:
+    from module import VectorClockReasoningModel
+except ImportError:
+    from projects.c126_vector_clock_attention.module import VectorClockReasoningModel
+
 
 Tuple_Data = Tuple[torch.Tensor, torch.Tensor, torch.Tensor]
 

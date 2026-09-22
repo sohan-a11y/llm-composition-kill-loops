@@ -23,6 +23,8 @@ from projects.c124_enzymatic_attention.eval_enzymatic import evaluate_enzymatic,
 from projects.c132_soliton_residual.eval_soliton import evaluate_soliton, sanity_check_soliton, kill_control_soliton
 from projects.c134_padic_tree_cache.eval_padic import evaluate_padic, sanity_check_padic, kill_control_padic
 from projects.c126_vector_clock_attention.eval_vc import evaluate_vc, sanity_check_vc, kill_control_vc
+from projects.c131_dijkstra_ring.eval_dijkstra import evaluate_dijkstra, sanity_check_dijkstra, kill_control_dijkstra
+
 
 
 def run_continuous_meta_loop(max_cycles: int = 10):
@@ -260,7 +262,32 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             print(f"[ERROR in C126]: {e}")
             traceback.print_exc()
 
+        # -------------------------------------------------------------
+        # 10. Project C131: Self-Stabilizing Dijkstra-Ring Virtual Token Memory
+        # -------------------------------------------------------------
+        try:
+            dijkstra_epochs = 60 + (cycle * 10)
+            print(f"\n[Running C131] Dijkstra Token Ring Memory (K=4, M=5, epochs: {dijkstra_epochs})")
+            loop_c131 = SelfImprovingLoop(
+                experiment_name=f"c131_cycle_{cycle}",
+                initial_config={"d_model": 32, "K": 4, "M": 5, "num_classes": 5, "epochs": dijkstra_epochs, "batch_size": 64, "seq_len": 6, "lr": 0.01},
+                train_and_eval_fn=evaluate_dijkstra,
+                sanity_check_fn=sanity_check_dijkstra,
+                kill_control_fn=kill_control_dijkstra,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "epochs": best_config["epochs"] + 10 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c131"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c131 = loop_c131.run_cycle()
+            cycle_results["c131"] = {"best_acc": res_c131["best_score"], "config": res_c131["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C131]: {e}")
+            traceback.print_exc()
+
         cycle_elapsed = time.time() - cycle_start
+
 
         master_history.append({
             "cycle": cycle,
