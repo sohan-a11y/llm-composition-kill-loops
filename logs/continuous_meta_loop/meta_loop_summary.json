@@ -3,7 +3,7 @@
   "history": [
     {
       "cycle": 1,
-      "duration_sec": 97.79978036880493,
+      "duration_sec": 62.63135027885437,
       "results": {
         "c085": {
           "best_acc": 1.0,
@@ -120,6 +120,21 @@
             "n_flux": 4,
             "sigma_vortex": 0.15,
             "seq_len": 10,
+            "n_train": 400,
+            "n_test": 300,
+            "epochs": 40,
+            "lr": 0.01
+          }
+        },
+        "c168": {
+          "best_acc": 0.996666669845581,
+          "config": {
+            "d_model": 32,
+            "n_heads": 2,
+            "n_classes": 5,
+            "delta_knot": 1.5,
+            "lambda_strand": 40.0,
+            "seq_len": 6,
             "n_train": 400,
             "n_test": 300,
             "epochs": 40,

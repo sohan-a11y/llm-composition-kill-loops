@@ -1,7 +1,7 @@
 {
   "experiment_name": "c029_cycle_4",
-  "updated_at": 1790107320.3951826,
-  "trial_count": 3,
+  "updated_at": 1790112083.0311916,
+  "trial_count": 5,
   "trials": [
     {
       "trial_id": "c029_cycle_4_gen_1",
@@ -26,7 +26,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790107278.1053042
+      "timestamp": 1790112061.9631796
     },
     {
       "trial_id": "c029_cycle_4_gen_1",
@@ -51,7 +51,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790107299.0932627
+      "timestamp": 1790112061.9631813
     },
     {
       "trial_id": "c029_cycle_4_gen_2",
@@ -76,7 +76,57 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790107320.39518
+      "timestamp": 1790112061.9631824
+    },
+    {
+      "trial_id": "c029_cycle_4_gen_1",
+      "config": {
+        "k": 3,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.2325,
+        "acc_std": 0.0,
+        "loss_mean": 1.5980790615081788,
+        "loss_std": 0.0,
+        "n_params_mean": 109695.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790112072.1127627
+    },
+    {
+      "trial_id": "c029_cycle_4_gen_2",
+      "config": {
+        "k": 3,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.2325,
+        "acc_std": 0.0,
+        "loss_mean": 1.5980790615081788,
+        "loss_std": 0.0,
+        "n_params_mean": 109695.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2325). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790112083.03119
     }
   ]
 }

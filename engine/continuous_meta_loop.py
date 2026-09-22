@@ -25,6 +25,7 @@ from projects.c134_padic_tree_cache.eval_padic import evaluate_padic, sanity_che
 from projects.c126_vector_clock_attention.eval_vc import evaluate_vc, sanity_check_vc, kill_control_vc
 from projects.c131_dijkstra_ring.eval_dijkstra import evaluate_dijkstra, sanity_check_dijkstra, kill_control_dijkstra
 from projects.c146_fluxoid_quantization.eval_fluxoid import evaluate_fluxoid, sanity_check_fluxoid, kill_control_fluxoid
+from projects.c168_topoisomerase_attention.eval_topo import evaluate_topo, sanity_check_topo, kill_control_topo
 
 
 
@@ -309,6 +310,30 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             cycle_results["c146"] = {"best_acc": res_c146["best_score"], "config": res_c146["best_config"]}
         except Exception as e:
             print(f"[ERROR in C146]: {e}")
+            traceback.print_exc()
+
+        # -------------------------------------------------------------
+        # 12. Project C168: DNA Topoisomerase-II Strand-Passage Attention Unknotting
+        # -------------------------------------------------------------
+        try:
+            topo_epochs = 35 + (cycle * 5)
+            print(f"\n[Running C168] Topoisomerase Attention Unknotting (delta=1.5, epochs: {topo_epochs})")
+            loop_c168 = SelfImprovingLoop(
+                experiment_name=f"c168_cycle_{cycle}",
+                initial_config={"d_model": 32, "n_heads": 2, "n_classes": 5, "delta_knot": 1.5, "lambda_strand": 40.0, "seq_len": 6, "n_train": 400, "n_test": 300, "epochs": topo_epochs, "lr": 0.01},
+                train_and_eval_fn=evaluate_topo,
+                sanity_check_fn=sanity_check_topo,
+                kill_control_fn=kill_control_topo,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "epochs": best_config["epochs"] + 5 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c168"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c168 = loop_c168.run_cycle()
+            cycle_results["c168"] = {"best_acc": res_c168["best_score"], "config": res_c168["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C168]: {e}")
             traceback.print_exc()
 
         cycle_elapsed = time.time() - cycle_start
