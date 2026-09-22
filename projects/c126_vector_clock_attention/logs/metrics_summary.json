@@ -1,0 +1,33 @@
+{
+  "project": "C126_vector_clock_attention",
+  "seeds": [
+    42,
+    137
+  ],
+  "avg_sanity_acc": 1.0,
+  "avg_normal_acc": 1.0,
+  "std_normal_acc": 0.0,
+  "avg_distractor_leak_acc": 0.2110000029206276,
+  "avg_decoupled_payload_acc": 0.21000000089406967,
+  "chance_baseline": 0.2,
+  "passed_sanity": true,
+  "passed_multi_seed": true,
+  "passed_kill_controls": true,
+  "overall_pass": true,
+  "seed_details": [
+    {
+      "seed": 42,
+      "sanity_acc": 1.0,
+      "normal_acc": 1.0,
+      "distractor_leak_acc": 0.1979999989271164,
+      "decoupled_payload_acc": 0.20200000703334808
+    },
+    {
+      "seed": 137,
+      "sanity_acc": 1.0,
+      "normal_acc": 1.0,
+      "distractor_leak_acc": 0.2240000069141388,
+      "decoupled_payload_acc": 0.21799999475479126
+    }
+  ]
+}
