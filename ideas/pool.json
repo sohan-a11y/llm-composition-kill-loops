@@ -392,6 +392,36 @@
    "strat": "xdomain-signal",
    "claim": "auto-xdomain-signal variant 14: add explicit kill control",
    "status": "raw"
+  },
+  {
+   "id": "G1014-0",
+   "strat": "xdomain-econ",
+   "claim": "auto-xdomain-econ variant 0: invert the data/control plane",
+   "status": "raw"
+  },
+  {
+   "id": "G1014-1",
+   "strat": "xdomain-os",
+   "claim": "auto-xdomain-os variant 1: replace learned with analytic + verify",
+   "status": "raw"
+  },
+  {
+   "id": "G1014-2",
+   "strat": "invert-assumption",
+   "claim": "auto-invert-assumption variant 2: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1014-3",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 3: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1014-4",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 4: bound cost to <10% overhead",
+   "status": "raw"
   }
  ],
  "raw_count": 110,

@@ -65,8 +65,13 @@ def main():
     args = ap.parse_args()
     pool = load_pool()
     start_n = len(pool["raw"])
+    have = {c["id"] for c in pool["raw"]}
+    # FIX 2026-09-23: seed was 1000+it per invocation, so separate runs re-emitted
+    # identical G1000/G1001 blocks (dupes in pool). Derive base from pool size and dedupe.
+    base = 1000 + (start_n // max(1, args.new_per_iter)) + 1
     for it in range(args.iters):
-        nc = gen_candidates(args.new_per_iter, seed=1000 + it)
+        nc = [c for c in gen_candidates(args.new_per_iter, seed=base + it) if c["id"] not in have]
+        have.update(c["id"] for c in nc)
         pool["raw"].extend(nc)
         log_state({"iter": it, "event": "generated", "n": len(nc)})
         for e in args.exps:

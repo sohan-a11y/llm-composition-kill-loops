@@ -33,3 +33,5 @@
 {"iter": 2, "event": "kill", "exp": "b_cy2_merkle", "rc": 0, "go": false, "t": 1790105162.9633193}
 {"iter": 2, "event": "kill", "exp": "b_s3_wavelet", "rc": 0, "go": false, "t": 1790105163.6178837}
 {"iter": 2, "event": "kill", "exp": "b_c3_biasfold", "rc": 0, "go": false, "t": 1790105170.855963}
+{"iter": 0, "event": "generated", "n": 5, "t": 1790108225.5717258}
+{"iter": 0, "event": "kill", "exp": "b_d1_join_order", "rc": 0, "go": false, "t": 1790108228.2115738}
