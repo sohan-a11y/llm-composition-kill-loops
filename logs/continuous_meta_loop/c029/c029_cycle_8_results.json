@@ -1,7 +1,7 @@
 {
   "experiment_name": "c029_cycle_8",
-  "updated_at": 1790107577.8416748,
-  "trial_count": 1,
+  "updated_at": 1790107602.5749848,
+  "trial_count": 2,
   "trials": [
     {
       "trial_id": "c029_cycle_8_gen_1",
@@ -27,6 +27,31 @@
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2200). Representation may suffer from severe crosstalk or insufficient capacity.",
       "timestamp": 1790107577.8416684
+    },
+    {
+      "trial_id": "c029_cycle_8_gen_2",
+      "config": {
+        "k": 3,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.22,
+        "acc_std": 0.0,
+        "loss_mean": 1.6010497033596038,
+        "loss_std": 0.0,
+        "n_params_mean": 109695.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2200). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790107602.5749788
     }
   ]
 }

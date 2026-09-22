@@ -1,5 +1,5 @@
 {
-  "cycles_completed": 7,
+  "cycles_completed": 8,
   "history": [
     {
       "cycle": 1,
@@ -354,6 +354,58 @@
           "best_acc": 0.305,
           "config": {
             "k": 2,
+            "domain": 40,
+            "layers": 4,
+            "d_model": 64,
+            "heads": 4,
+            "lr": 0.001,
+            "epochs": 8,
+            "ssa_mode": true
+          }
+        }
+      }
+    },
+    {
+      "cycle": 8,
+      "duration_sec": 57.417410373687744,
+      "results": {
+        "c085": {
+          "best_acc": 0.7866666666666666,
+          "config": {
+            "n_samples": 150,
+            "n_layers": 22,
+            "d_model": 64,
+            "threshold": 0.31
+          }
+        },
+        "c063": {
+          "best_acc": 1.0,
+          "config": {
+            "n_samples": 120,
+            "noise_level": 0.6000000000000001
+          }
+        },
+        "c094": {
+          "best_acc": 0.99,
+          "config": {
+            "n_sequences": 100,
+            "seq_len": 13,
+            "n_layers": 8,
+            "threshold": 0.5
+          }
+        },
+        "c095": {
+          "best_acc": 0.5291666666666667,
+          "config": {
+            "n_samples": 120,
+            "n_layers": 8,
+            "threshold": 1.65
+          }
+        },
+        "c029": {
+          "best_acc": 0.22,
+          "config": {
+            "k": 3,
             "domain": 40,
             "layers": 4,
             "d_model": 64,
