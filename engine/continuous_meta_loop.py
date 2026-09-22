@@ -21,6 +21,7 @@ from projects.c094_residual_correlation.eval_correlation import evaluate_residua
 from projects.c095_residual_arclength.eval_calibration import evaluate_arclength_calibration, sanity_check_arclength, kill_control_arclength
 from projects.c124_enzymatic_attention.eval_enzymatic import evaluate_enzymatic, sanity_check_enzymatic, kill_control_enzymatic
 from projects.c132_soliton_residual.eval_soliton import evaluate_soliton, sanity_check_soliton, kill_control_soliton
+from projects.c134_padic_tree_cache.eval_padic import evaluate_padic, sanity_check_padic, kill_control_padic
 
 
 def run_continuous_meta_loop(max_cycles: int = 10):
@@ -208,6 +209,30 @@ def run_continuous_meta_loop(max_cycles: int = 10):
             cycle_results["c132"] = {"best_acc": res_c132["best_score"], "config": res_c132["best_config"]}
         except Exception as e:
             print(f"[ERROR in C132]: {e}")
+            traceback.print_exc()
+
+        # -------------------------------------------------------------
+        # 8. Project C134: p-adic Ultrametric Tree Cache (Scaling penalty & samples)
+        # -------------------------------------------------------------
+        try:
+            pen_val = 8.0 + (cycle * 2.0)
+            print(f"\n[Running C134] Tree KV-Cache: penalty: {pen_val:.1f}, p: 2")
+            loop_c134 = SelfImprovingLoop(
+                experiment_name=f"c134_cycle_{cycle}",
+                initial_config={"n_samples": 300, "d_model": 32, "n_classes": 5, "penalty": pen_val, "p": 2, "epochs": 20, "lr": 0.01},
+                train_and_eval_fn=evaluate_padic,
+                sanity_check_fn=sanity_check_padic,
+                kill_control_fn=kill_control_padic,
+                mutate_config_fn=lambda current_config, best_config, generation, **kwargs: {**best_config, "penalty": best_config["penalty"] + 2.0 * (generation % 2 == 0)},
+                log_dir=os.path.join(log_dir, "c134"),
+                primary_metric="acc",
+                seeds=[42 + cycle, 137 + cycle],
+                max_generations=2
+            )
+            res_c134 = loop_c134.run_cycle()
+            cycle_results["c134"] = {"best_acc": res_c134["best_score"], "config": res_c134["best_config"]}
+        except Exception as e:
+            print(f"[ERROR in C134]: {e}")
             traceback.print_exc()
 
         cycle_elapsed = time.time() - cycle_start

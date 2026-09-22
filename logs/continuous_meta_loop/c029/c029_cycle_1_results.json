@@ -1,7 +1,7 @@
 {
   "experiment_name": "c029_cycle_1",
-  "updated_at": 1790109397.6509964,
-  "trial_count": 11,
+  "updated_at": 1790109861.0947397,
+  "trial_count": 13,
   "trials": [
     {
       "trial_id": "c029_cycle_1_gen_1",
@@ -26,7 +26,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335195
+      "timestamp": 1790109831.4466383
     },
     {
       "trial_id": "c029_cycle_1_gen_1",
@@ -51,7 +51,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335218
+      "timestamp": 1790109831.4466412
     },
     {
       "trial_id": "c029_cycle_1_gen_2",
@@ -76,7 +76,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335235
+      "timestamp": 1790109831.4466429
     },
     {
       "trial_id": "c029_cycle_1_gen_1",
@@ -101,7 +101,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.833525
+      "timestamp": 1790109831.4466445
     },
     {
       "trial_id": "c029_cycle_1_gen_2",
@@ -126,7 +126,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335264
+      "timestamp": 1790109831.446646
     },
     {
       "trial_id": "c029_cycle_1_gen_1",
@@ -151,7 +151,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335278
+      "timestamp": 1790109831.446648
     },
     {
       "trial_id": "c029_cycle_1_gen_2",
@@ -176,7 +176,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.833529
+      "timestamp": 1790109831.4466493
     },
     {
       "trial_id": "c029_cycle_1_gen_1",
@@ -201,7 +201,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335307
+      "timestamp": 1790109831.446651
     },
     {
       "trial_id": "c029_cycle_1_gen_2",
@@ -226,7 +226,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109368.8335316
+      "timestamp": 1790109831.4466527
     },
     {
       "trial_id": "c029_cycle_1_gen_1",
@@ -251,7 +251,7 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109384.3470883
+      "timestamp": 1790109831.4466586
     },
     {
       "trial_id": "c029_cycle_1_gen_2",
@@ -276,7 +276,57 @@
       "sanity_passed": true,
       "kill_control_passed": true,
       "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
-      "timestamp": 1790109397.6509948
+      "timestamp": 1790109831.44666
+    },
+    {
+      "trial_id": "c029_cycle_1_gen_1",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.2975,
+        "acc_std": 0.0,
+        "loss_mean": 1.5620542228221894,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790109847.0386965
+    },
+    {
+      "trial_id": "c029_cycle_1_gen_2",
+      "config": {
+        "k": 2,
+        "domain": 40,
+        "layers": 4,
+        "d_model": 64,
+        "heads": 4,
+        "lr": 0.001,
+        "epochs": 8,
+        "ssa_mode": true
+      },
+      "metrics": {
+        "acc_mean": 0.2975,
+        "acc_std": 0.0,
+        "loss_mean": 1.5620542228221894,
+        "loss_std": 0.0,
+        "n_params_mean": 109567.0,
+        "n_params_std": 0.0
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Low composition accuracy (0.2975). Representation may suffer from severe crosstalk or insufficient capacity.",
+      "timestamp": 1790109861.094737
     }
   ]
 }

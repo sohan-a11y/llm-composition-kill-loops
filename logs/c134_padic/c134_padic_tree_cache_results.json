@@ -1,0 +1,51 @@
+{
+  "experiment_name": "c134_padic_tree_cache",
+  "updated_at": 1790109795.4399083,
+  "trial_count": 2,
+  "trials": [
+    {
+      "trial_id": "c134_padic_tree_cache_gen_1",
+      "config": {
+        "n_samples": 300,
+        "d_model": 32,
+        "n_classes": 5,
+        "penalty": 10.0,
+        "p": 2,
+        "epochs": 25,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "target_attn_mass_mean": 0.8577609658241272,
+        "target_attn_mass_std": 0.00023555755615234375
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790109791.5335903
+    },
+    {
+      "trial_id": "c134_padic_tree_cache_gen_2",
+      "config": {
+        "n_samples": 300,
+        "d_model": 32,
+        "n_classes": 5,
+        "penalty": 10.0,
+        "p": 2,
+        "epochs": 25,
+        "lr": 0.01
+      },
+      "metrics": {
+        "acc_mean": 1.0,
+        "acc_std": 0.0,
+        "target_attn_mass_mean": 0.8577609658241272,
+        "target_attn_mass_std": 0.00023555755615234375
+      },
+      "sanity_passed": true,
+      "kill_control_passed": true,
+      "notes": "Strong compositional retention (1.0000). Robust generalization across seeds with verified kill control.",
+      "timestamp": 1790109795.4399056
+    }
+  ]
+}
