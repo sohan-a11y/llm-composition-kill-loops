@@ -1,0 +1,35 @@
+{"iter": 0, "event": "generated", "n": 10, "t": 1790104232.9507904}
+{"iter": 0, "event": "kill", "exp": "b_d1_join_order", "rc": 0, "go": false, "t": 1790104233.7894194}
+{"iter": 0, "event": "kill", "exp": "b_d2_matviews", "rc": 0, "go": true, "t": 1790104234.3244398}
+{"iter": 0, "event": "kill", "exp": "c11_units", "rc": 0, "go": true, "t": 1790104234.9051692}
+{"iter": 0, "event": "kill", "exp": "b_cy2_merkle", "rc": 0, "go": false, "t": 1790104235.0516565}
+{"iter": 0, "event": "kill", "exp": "b_s3_wavelet", "rc": 0, "go": false, "t": 1790104235.4125001}
+{"iter": 0, "event": "kill", "exp": "b_c3_biasfold", "rc": 0, "go": true, "t": 1790104239.350557}
+{"iter": 1, "event": "generated", "n": 10, "t": 1790104239.3522005}
+{"iter": 1, "event": "kill", "exp": "b_d1_join_order", "rc": 0, "go": false, "t": 1790104239.6393409}
+{"iter": 1, "event": "kill", "exp": "b_d2_matviews", "rc": 0, "go": true, "t": 1790104239.8968139}
+{"iter": 1, "event": "kill", "exp": "c11_units", "rc": 0, "go": true, "t": 1790104240.1316085}
+{"iter": 1, "event": "kill", "exp": "b_cy2_merkle", "rc": 0, "go": false, "t": 1790104240.2400327}
+{"iter": 1, "event": "kill", "exp": "b_s3_wavelet", "rc": 0, "go": false, "t": 1790104240.6398547}
+{"iter": 1, "event": "kill", "exp": "b_c3_biasfold", "rc": 0, "go": true, "t": 1790104243.6096115}
+{"iter": 0, "event": "generated", "n": 15, "t": 1790105114.0366185}
+{"iter": 0, "event": "kill", "exp": "b_d1_join_order", "rc": 0, "go": false, "t": 1790105118.015831}
+{"iter": 0, "event": "kill", "exp": "b_d2_matviews", "rc": 0, "go": false, "t": 1790105119.1413167}
+{"iter": 0, "event": "kill", "exp": "c11_units", "rc": 0, "go": false, "t": 1790105120.3767762}
+{"iter": 0, "event": "kill", "exp": "b_cy2_merkle", "rc": 0, "go": false, "t": 1790105120.8194196}
+{"iter": 0, "event": "kill", "exp": "b_s3_wavelet", "rc": 0, "go": false, "t": 1790105122.0141816}
+{"iter": 0, "event": "kill", "exp": "b_c3_biasfold", "rc": 0, "go": false, "t": 1790105140.0247984}
+{"iter": 1, "event": "generated", "n": 15, "t": 1790105140.0319746}
+{"iter": 1, "event": "kill", "exp": "b_d1_join_order", "rc": 0, "go": false, "t": 1790105141.3751462}
+{"iter": 1, "event": "kill", "exp": "b_d2_matviews", "rc": 0, "go": false, "t": 1790105142.460576}
+{"iter": 1, "event": "kill", "exp": "c11_units", "rc": 0, "go": false, "t": 1790105143.7293031}
+{"iter": 1, "event": "kill", "exp": "b_cy2_merkle", "rc": 0, "go": false, "t": 1790105144.1788104}
+{"iter": 1, "event": "kill", "exp": "b_s3_wavelet", "rc": 0, "go": false, "t": 1790105145.3747957}
+{"iter": 1, "event": "kill", "exp": "b_c3_biasfold", "rc": 0, "go": false, "t": 1790105158.2035146}
+{"iter": 2, "event": "generated", "n": 15, "t": 1790105158.2106414}
+{"iter": 2, "event": "kill", "exp": "b_d1_join_order", "rc": 0, "go": false, "t": 1790105159.7425845}
+{"iter": 2, "event": "kill", "exp": "b_d2_matviews", "rc": 0, "go": false, "t": 1790105161.9977112}
+{"iter": 2, "event": "kill", "exp": "c11_units", "rc": 0, "go": false, "t": 1790105162.7519531}
+{"iter": 2, "event": "kill", "exp": "b_cy2_merkle", "rc": 0, "go": false, "t": 1790105162.9633193}
+{"iter": 2, "event": "kill", "exp": "b_s3_wavelet", "rc": 0, "go": false, "t": 1790105163.6178837}
+{"iter": 2, "event": "kill", "exp": "b_c3_biasfold", "rc": 0, "go": false, "t": 1790105170.855963}

@@ -1,11 +1,7 @@
 {
  "filter1": {},
  "filter2": {},
- "promoted": [
-  "b_d2_matviews",
-  "c11_units",
-  "b_c3_biasfold"
- ],
+ "promoted": [],
  "raw": [
   {
    "id": "G1000-0",
@@ -126,6 +122,276 @@
    "strat": "tooling",
    "claim": "auto-tooling variant 9: require bit-exact control that can fail",
    "status": "raw"
+  },
+  {
+   "id": "G1000-0",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 0: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-1",
+   "strat": "xdomain-compilers",
+   "claim": "auto-xdomain-compilers variant 1: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-2",
+   "strat": "xdomain-control",
+   "claim": "auto-xdomain-control variant 2: invert the data/control plane",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-3",
+   "strat": "xdomain-crypto",
+   "claim": "auto-xdomain-crypto variant 3: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-4",
+   "strat": "xdomain-econ",
+   "claim": "auto-xdomain-econ variant 4: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-5",
+   "strat": "xdomain-db",
+   "claim": "auto-xdomain-db variant 5: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-6",
+   "strat": "anomaly",
+   "claim": "auto-anomaly variant 6: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-7",
+   "strat": "xdomain-control",
+   "claim": "auto-xdomain-control variant 7: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-8",
+   "strat": "xdomain-crypto",
+   "claim": "auto-xdomain-crypto variant 8: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-9",
+   "strat": "anomaly",
+   "claim": "auto-anomaly variant 9: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-10",
+   "strat": "xdomain-control",
+   "claim": "auto-xdomain-control variant 10: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-11",
+   "strat": "xdomain-crypto",
+   "claim": "auto-xdomain-crypto variant 11: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-12",
+   "strat": "invert-assumption",
+   "claim": "auto-invert-assumption variant 12: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-13",
+   "strat": "tooling",
+   "claim": "auto-tooling variant 13: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1000-14",
+   "strat": "xdomain-db",
+   "claim": "auto-xdomain-db variant 14: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-0",
+   "strat": "invert-assumption",
+   "claim": "auto-invert-assumption variant 0: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-1",
+   "strat": "xdomain-compilers",
+   "claim": "auto-xdomain-compilers variant 1: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-2",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 2: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-3",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 3: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-4",
+   "strat": "xdomain-control",
+   "claim": "auto-xdomain-control variant 4: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-5",
+   "strat": "anomaly",
+   "claim": "auto-anomaly variant 5: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-6",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 6: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-7",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 7: invert the data/control plane",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-8",
+   "strat": "invert-assumption",
+   "claim": "auto-invert-assumption variant 8: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-9",
+   "strat": "tooling",
+   "claim": "auto-tooling variant 9: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-10",
+   "strat": "xdomain-crypto",
+   "claim": "auto-xdomain-crypto variant 10: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-11",
+   "strat": "tooling",
+   "claim": "auto-tooling variant 11: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-12",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 12: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-13",
+   "strat": "xdomain-os",
+   "claim": "auto-xdomain-os variant 13: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1001-14",
+   "strat": "tooling",
+   "claim": "auto-tooling variant 14: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-0",
+   "strat": "xdomain-econ",
+   "claim": "auto-xdomain-econ variant 0: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-1",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 1: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-2",
+   "strat": "xdomain-db",
+   "claim": "auto-xdomain-db variant 2: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-3",
+   "strat": "xdomain-signal",
+   "claim": "auto-xdomain-signal variant 3: add explicit kill control",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-4",
+   "strat": "xdomain-db",
+   "claim": "auto-xdomain-db variant 4: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-5",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 5: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-6",
+   "strat": "xdomain-compilers",
+   "claim": "auto-xdomain-compilers variant 6: require bit-exact control that can fail",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-7",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 7: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-8",
+   "strat": "invert-assumption",
+   "claim": "auto-invert-assumption variant 8: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-9",
+   "strat": "xdomain-os",
+   "claim": "auto-xdomain-os variant 9: invert the data/control plane",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-10",
+   "strat": "xdomain-ecc",
+   "claim": "auto-xdomain-ecc variant 10: invert the data/control plane",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-11",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 11: bound cost to <10% overhead",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-12",
+   "strat": "anomaly",
+   "claim": "auto-anomaly variant 12: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-13",
+   "strat": "xdomain-bio-phys",
+   "claim": "auto-xdomain-bio-phys variant 13: swap train/infer placement",
+   "status": "raw"
+  },
+  {
+   "id": "G1002-14",
+   "strat": "xdomain-signal",
+   "claim": "auto-xdomain-signal variant 14: add explicit kill control",
+   "status": "raw"
   }
  ],
  "raw_count": 110,
@@ -135,5 +401,6 @@
   "anomaly",
   "tooling"
  ],
- "version": 1
+ "version": 1,
+ "note": "stale false-GO promotions cleared after harness hardening (b_d2/c11/b_c3 now correctly KILL); auto-raw=65, batch2=40, total~215"
 }
